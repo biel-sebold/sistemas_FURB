@@ -26,6 +26,7 @@ public class Uni4Exe21 {
 
         double imc = peso / Math.pow(altura, 2);
 
+        
         String classificacao = " ";
         if (imc < 18.5) {
             classificacao = "Magreza";
@@ -36,7 +37,18 @@ public class Uni4Exe21 {
         } else if (imc < 30) {
             classificacao = "Sobrepeso";
             
+        } else if (imc < 35) {
+            classificacao = "Obesidade Grau I";
+            
+        } else if (imc < 40) {
+            classificacao = "Obesidade Grau II (severa)";
+            
+        } else{
+            classificacao = "Obesidade Grau III (mórbida)";
         }
+
+
+        System.out.printf("IMC = %.2f - %s", imc, classificacao);
 
     }
     
