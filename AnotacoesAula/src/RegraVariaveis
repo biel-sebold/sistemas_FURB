@@ -1,0 +1,10 @@
+*sempre minúsculo
+*não se usa underline (só em constantes)
+
+*NOMENCLATURA: (camel case)
+
+-nomePai        (variavel)
+-nomePai()      (método)
+-NomePai        (classe)
+-NomePai()      (construtor/método que inicia uma classe)
+-NOME_PAI       (constante)

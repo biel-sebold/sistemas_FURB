@@ -1,0 +1,37 @@
+TIPOS DE COMANDO:
+​
+- SELEÇÃO: executam instruções de acordo com uma determinada condição​;
+- REPTEIÇÃO: executam instruções em um número repetido de vezes. Também são chamadas de “laços”​;
+- SUB-ROTINA: executam a chamada de sub-rotinas com propriedades específicas.
+
+
+TIPOS DE SELEÇÃO:
+
+- SIMPLES: se (if)​
+- ENCADEADA: se-senão (if – else)​
+- MÚLTIPLA: escolha (switch case)
+
+SIMPLES:
+*OPERADORES*
+
+== (igual)
+!= (diferente)
+<= (menor ou igual)
+>= (maior ou igual)
+> (maior)
+< (menor)
+
+ENCADEADA:
+*OPERADORES*
+
+&& (E)
+|| (OU)
+! (NEGAÇÃO)
+
+*TABELAS VERDADE*
+
+&&                        ||                        !                        ^
+V e V = V                 V e V = V                 não V = F                V e V = F
+V e F = F                 V e F = V                 não F = V                V e F = V
+F e V = F                 F e V = V                                          F e V = V 
+F e F = F                 F e F = F                                          F e F = F
