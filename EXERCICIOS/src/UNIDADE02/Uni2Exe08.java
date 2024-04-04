@@ -27,7 +27,9 @@ public class Uni2Exe08 {
     double valorUniP2 = dig.nextDouble();
 
     double valorTotal = (numTotalP1*valorUniP1) + (numTotalP2*valorUniP2);
-    System.out.printf("O valor total a ser pago será: R$%.2f", valorTotal);
+    System.out.printf("O valor total a ser pago nas peças %d e %d será: R$%.2f", codP1, codP2, valorTotal);
+
+    dig.close();
  }
     
 }

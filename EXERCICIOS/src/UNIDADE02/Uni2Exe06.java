@@ -14,5 +14,7 @@ public class Uni2Exe06 {
         float salario = numHoras * valorHora;
 
         System.out.println("O funcionário " + numFunc + " possui o salário R$" + salario);
+
+        dig.close();
     }
 }

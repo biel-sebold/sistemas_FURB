@@ -18,7 +18,10 @@ public class Uni2Exe07 {
 
      double salFinal = salFixo + (totalVendas*0.15);
 
-     System.out.printf("O total a receber no final do mês será: R$%.2f", salFinal);
+     System.out.printf("O total a receber do funcionário %s no final do mês será: R$%.2f", nomeFunc,salFinal);
+
+     dig.close();
+     
      
    }
 

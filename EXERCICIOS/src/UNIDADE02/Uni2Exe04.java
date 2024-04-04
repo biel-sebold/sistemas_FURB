@@ -21,6 +21,8 @@ public class Uni2Exe04 {
         double mediaPonderada = (notaA*PESO_A) + (notaB*PESO_B) / somaDosPesos;
         System.out.printf("A média ponderada será igual a: %.1f", mediaPonderada);
 
+        dig.close();
+
     }
    
     

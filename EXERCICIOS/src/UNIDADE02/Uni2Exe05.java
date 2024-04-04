@@ -16,6 +16,8 @@ public class Uni2Exe05 {
 
         System.out.println("O valor da diferença do produto de A e B pelo produto de C e D será: " + diff);
 
+        dig.close();
+
 
     //EXEMPLO CONCATENAÇÃO
         //System.out.printf("O valor da diferença do produto de %d e %d pelo produto de %d e %d é igual a %d", A, B, C, D, diff);

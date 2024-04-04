@@ -17,6 +17,10 @@ public class Uni2Exe03 {
 
     System.out.printf("A área da faixa é igual a: %.4f", area);
 
+    dig.close();
+
+
+
     }
     
 }

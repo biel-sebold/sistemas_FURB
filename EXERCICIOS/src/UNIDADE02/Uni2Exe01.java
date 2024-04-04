@@ -14,6 +14,8 @@ public class Uni2Exe01 {
 
      System.out.println("A soma é " + soma);
 
+     dig.close();
+
      
 
 //EXEMPLO CONCATENAÇÃO            
