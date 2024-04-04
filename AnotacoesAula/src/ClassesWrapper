@@ -1,0 +1,7 @@
+TIPOS DE CLASSES WRAPPER:
+
+int = nextInt();
+float = nextFloat();
+double = nextDouble();
+char = x = nextLine().charAt();
+String = nextLine();
