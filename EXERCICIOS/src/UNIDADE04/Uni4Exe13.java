@@ -49,6 +49,50 @@ public class Uni4Exe13 {
              } else{
 
             }
+
+
+
+
+
+
+//PROFESSOR//
+    //     // Entrada
+    // System.out.println("Informa as 3 cartas: ");
+    // int carta1 = teclado.nextInt();
+    // int carta2 = teclado.nextInt();
+    // int carta3 = teclado.nextInt();
+
+    // // Processo
+    // // AS TRÊS cartas forem AS, 2 ou 3
+    // boolean nove = carta1 == 1 && carta2 == 1 && carta3 == 1 || 
+    //                carta1 == 2 && carta2 == 2 && carta3 == 2 || 
+    //                carta1 == 3 && carta2 == 3 && carta3 == 3;
+
+    // // APENAS DUAS das três cartas for AS, 2 ou 3
+    // boolean seis = carta1 == 1 && carta2 == 1 || carta1 == 1 && carta3 == 1 || carta2 == 1 && carta3 == 1 || 
+    //                carta1 == 2 && carta2 == 2 || carta1 == 2 && carta3 == 2 || carta2 == 2 && carta3 == 2 || 
+    //                carta1 == 3 && carta2 == 3 || carta1 == 3 && carta3 == 3 || carta2 == 3 && carta3 == 3;
+
+    // // APENAS UMA das três cartas for AS, 2 ou 3
+    // boolean truco = carta1 == 1 || carta2 == 1 || carta3 == 1 || 
+    //                 carta1 == 2 || carta2 == 2 || carta3 == 2 || 
+    //                 carta1 == 3 || carta2 == 3 || carta3 == 3;
+
+    // // Saida
+    // if (nove) {
+    //   System.out.println("NOVE");
+    // } else {
+    //   if (seis) {
+    //     System.out.println("SEIS");
+    //   } else {
+    //     if (truco) {
+    //       System.out.println("TRUCO");
+    //     }
+    //   }
+    // }
+
+
+
     }
 
     
