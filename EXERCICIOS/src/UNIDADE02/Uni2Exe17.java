@@ -1,6 +1,4 @@
-package EXERCÍCIOS.UNIDADE02;
-
-import java.text.DecimalFormat;
+package EXERCICIOS.src.UNIDADE02;
 import java.util.Scanner;
 
 public class Uni2Exe17 {
@@ -9,8 +7,6 @@ public class Uni2Exe17 {
         //Uma empresa tem para um funcionário os seguintes dados: o nome, o número de horas trabalhadas mensalmente e o número de dependentes. A empresa paga R$ 10,00 por hora (valor para cálculo do salário de trabalho) e R$ 60,00 por dependente (valor para cálculo do salário família) e são feitos descontos de 8,5% sobre o salário de trabalho para o INSS e de 5% sobre o salário de trabalho para o imposto de renda. Ao relatório final o nome, o salário bruto e o salário líquido do funcionário.
 
         Scanner dig = new Scanner(System.in);
-        DecimalFormat padrao = new DecimalFormat("###,##0.00");
-
 
         System.out.print("Informe o nome do funcionário: ");
         String nome = dig.nextLine();

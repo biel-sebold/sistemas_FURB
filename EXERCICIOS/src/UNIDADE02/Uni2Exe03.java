@@ -1,5 +1,4 @@
 package EXERCICIOS.src.UNIDADE02;
-
 import java.util.Scanner;
 
 public class Uni2Exe03 {

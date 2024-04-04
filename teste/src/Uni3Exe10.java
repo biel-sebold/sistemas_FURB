@@ -1,4 +1,4 @@
-package EXERCICIOS.src.UNIDADE03;
+package teste.src;
 import java.util.Scanner;
 
 public class Uni3Exe10 {

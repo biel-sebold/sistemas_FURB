@@ -1,3 +1,4 @@
+package EXERCICIOS.src.UNIDADE03;
 import java.util.Scanner;
 
 public class Uni3Exe03 {
