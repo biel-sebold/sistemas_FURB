@@ -1,3 +1,5 @@
+package EXERCÍCIOS.UNIDADE04;
+
 import java.util.Scanner;
 
 public class Uni4Exe12 {

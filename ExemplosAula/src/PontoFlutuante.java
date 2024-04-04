@@ -1,7 +1,5 @@
 package src;
 
-import java.text.DecimalFormat;
-
 public class PontoFlutuante {
     public static void main(String[] args) {
         
@@ -19,10 +17,10 @@ public class PontoFlutuante {
 
         //UTILIZANDO PATTERN (partir de um só para basear os outros)
 
-        DecimalFormat padrao = new DecimalFormat("###,##0.00");
-        double valor2 = .2;
+        // DecimalFormat padrao = new DecimalFormat("###,##0.00");
+        // double valor2 = .2;
 
-        System.out.println(padrao.format(valor2));
+        // System.out.println(padrao.format(valor2));
         
 
 

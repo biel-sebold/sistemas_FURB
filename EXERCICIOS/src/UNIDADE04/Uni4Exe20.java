@@ -50,7 +50,7 @@ public class Uni4Exe20 {
 
 
         String situacao = " ";
-        if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
+        if (conceito == A || conceito == B || conceito == C) {
             situacao = "APROVADO";
             
         } else{
