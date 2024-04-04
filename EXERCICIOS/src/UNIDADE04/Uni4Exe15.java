@@ -1,5 +1,4 @@
-package EXERCÍCIOS.UNIDADE04;
-
+package EXERCICIOS.src.UNIDADE04;
 import java.util.Scanner;
 
 public class Uni4Exe15 {
@@ -10,11 +9,6 @@ public class Uni4Exe15 {
 
         System.out.print("Informe a quantos meses o funcionário foi admitido: ");
         int meses = sc.nextInt();
-
-        if (condition) {
-            
-        }
-
 
     }
     

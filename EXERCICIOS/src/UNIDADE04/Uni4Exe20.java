@@ -1,3 +1,5 @@
+package EXERCICIOS.src.UNIDADE04;
+
 import java.util.Scanner;
 
 public class Uni4Exe20 {
@@ -29,19 +31,19 @@ public class Uni4Exe20 {
         System.out.print("Nota exercícios: ");
         float notaExe = sc.nextFloat();
 
-        float media = ((nota1 + nota2 * 2) + (nota3 * 3) + notaExe) / 7
+        float media = ((nota1 + nota2 * 2) + (nota3 * 3) + notaExe) / 7;
 
         char conceito = ' ';
         if (media >= 9.0) {
             conceito = 'A';
             
-        } else if (media >= 7.5 && < 9.0) {
+        } else if (media >= 7.5 && media < 9.0) {
             conceito = 'B';
 
-        } else if (media >= 6.0 && < 7.5) {
+        } else if (media >= 6.0 && media < 7.5) {
             conceito = 'C';
         
-        } else if (media >= 4.0 && < 6.0) {
+        } else if (media >= 4.0 && media < 6.0) {
             conceito = 'D';
             
         } else{
@@ -50,7 +52,7 @@ public class Uni4Exe20 {
 
 
         String situacao = " ";
-        if (conceito == A || conceito == B || conceito == C) {
+        if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
             situacao = "APROVADO";
             
         } else{
@@ -64,6 +66,7 @@ public class Uni4Exe20 {
 
 
 
+   
         //MODO RÁPIDO// (OVERHEAD)
 
         // if (media >= 9) {
@@ -92,12 +95,6 @@ public class Uni4Exe20 {
         // }
 
         // System.out.printf("A média é: %.1f com conceito %c e situação %s.", media, conceito, situacao );
-
-
-       
-
-
-    
     
         }
 

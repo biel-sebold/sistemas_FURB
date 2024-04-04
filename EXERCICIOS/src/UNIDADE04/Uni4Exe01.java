@@ -1,3 +1,4 @@
+package EXERCICIOS.src.UNIDADE04;
 import java.util.Scanner;
 
 public class Uni4Exe01 {
@@ -22,7 +23,5 @@ public class Uni4Exe01 {
 
         System.out.printf("O salário total é: R$%.2f", salarioTotal);
 
-       
-    
   }
 }

@@ -1,5 +1,4 @@
 package EXERCICIOS.src.UNIDADE04;
-
 import java.util.Scanner;
 
 public class Uni4Exe14 {
@@ -21,7 +20,7 @@ public class Uni4Exe14 {
         if (dia > 0 && dia < 32 && mes > 0 && mes < 13 && ano > 0) {
 
             
-        } els{
+        } else{
             System.out.println("Data Inválida");
         }
     }

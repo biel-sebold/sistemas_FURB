@@ -1,5 +1,4 @@
-package EXERCÍCIOS.UNIDADE04;
-
+package EXERCICIOS.src.UNIDADE04;
 import java.util.Scanner;
 
 public class Uni4Exe03 {

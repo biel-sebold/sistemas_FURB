@@ -1,8 +1,5 @@
-package EXERCÍCIOS.UNIDADE04;
-
+package EXERCICIOS.src.UNIDADE04;
 import java.util.Scanner;
-
-import src.variaveis;
 
 public class Uni4Exe05 {
     public static void main(String[] args) {

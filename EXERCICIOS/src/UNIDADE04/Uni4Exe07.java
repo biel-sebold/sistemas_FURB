@@ -1,9 +1,7 @@
-package EXERCÍCIOS.UNIDADE04;
-
+package EXERCICIOS.src.UNIDADE04;
 import java.util.Scanner;
 
 public class Uni4Exe07 {
-
     public static void main(String[] args) {
     //AJUDADO//
     //O custo do selo de uma carta com até 50 gramas é de R$ 0,45. As cartas com peso superior pagam um adicional de R$ 0,45 por cada 20 gramas, ou frações, em que exceder aquele peso. Escreva um algoritmo que dê o peso da carta, em gramas, determine o custo do selo.
