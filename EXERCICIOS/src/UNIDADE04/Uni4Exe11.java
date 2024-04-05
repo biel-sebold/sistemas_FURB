@@ -26,6 +26,8 @@ public class Uni4Exe11 {
             System.out.println("APENAS IRMÃOS");
         }
 
+        sc.close();
+
         
     }
     

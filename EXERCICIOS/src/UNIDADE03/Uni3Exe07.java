@@ -22,5 +22,7 @@ public class Uni3Exe07 {
         double total = quantidadeLatas + quantidadeGarrafas + quantidadeGarrafas2;
         System.out.print("O total de litros de refirgerante comprados foi: " + total + "litros");
 
+        sc.close();
+
     }
 }

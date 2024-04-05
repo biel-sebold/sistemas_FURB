@@ -15,6 +15,7 @@ public class Uni3Exe11 {
         double far = (cel * 9/5) + 32;
 
         System.out.printf("%.1f°C é equivalente a %.1f°F", cel, far);
+        sc.close();
     }
     
 }

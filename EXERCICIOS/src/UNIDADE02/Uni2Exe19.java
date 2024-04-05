@@ -22,7 +22,9 @@ public class Uni2Exe19 {
         double resultadoC = D;
 
         System.out.println("O valor de A é igual a: " + A);
-        System.out.println("O valor de C é igual a: " + resultadoC);
+        System.out.println("O valor de C é igual a: " + resultadoC + "e não" + C);
+
+        dig.close();
 
     }
 }

@@ -13,6 +13,8 @@ public class Uni3Exe06 {
 
         System.out.printf("O valor a pagar será de R$%.2f", preço);
 
+        sc.close();
+
 
 
 

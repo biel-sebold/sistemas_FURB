@@ -22,6 +22,8 @@ public class Uni4Exe08 {
             System.out.println("Não é vogal");
         }
 
+        sc.close();
+
     }
 
 }

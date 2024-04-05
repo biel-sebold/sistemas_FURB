@@ -27,5 +27,7 @@ public class Uni4Exe07 {
     }
 
     System.out.printf("O custo do selo será R$%.2f", custo); 
+
+    sc.close();
   }
 }

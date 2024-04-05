@@ -51,6 +51,8 @@ public class Uni2Exe15 {
         
         System.out.println((int)valor/1 + " moeda(s) de R$ 0.01");
 
+        dig.close();
+
 
 
     }   

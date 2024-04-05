@@ -20,6 +20,8 @@ public class Uni3Exe09 {
         
         System.out.printf("O volume da lata de óleo é: %.1fL", volume);
 
+        sc.close();
+
 
 
     

@@ -19,6 +19,8 @@ public class Uni4Exe05 {
             System.out.println("Resposta inválida. Por favor, responda com 'Sim' ou 'Não'.");
         }
 
+        sc.close();
+
 
 
 

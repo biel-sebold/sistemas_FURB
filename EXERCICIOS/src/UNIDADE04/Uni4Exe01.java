@@ -23,5 +23,7 @@ public class Uni4Exe01 {
 
         System.out.printf("O salário total é: R$%.2f", salarioTotal);
 
+        sc.close();
+
   }
 }

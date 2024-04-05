@@ -16,6 +16,8 @@ public class Uni3Exe03 {
 
         System.out.printf("Ele conseguiu colocar %.1f litros no tanque", litros);
 
+        sc.close();
+
 
     }
     

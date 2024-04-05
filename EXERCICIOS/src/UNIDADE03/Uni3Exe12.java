@@ -28,6 +28,8 @@ public class Uni3Exe12 {
         System.out.printf("Nome: %s\n", nome);
         System.out.printf("Salário Bruto: R$%.2f\n", salBruto);
         System.out.printf("Salário Líquido: R$%.2f", salLiquido);
+
+        sc.close();
         
 
     }

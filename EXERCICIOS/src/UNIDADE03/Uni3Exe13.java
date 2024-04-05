@@ -21,6 +21,8 @@ public class Uni3Exe13 {
         double valor = quantidadeAzulejos * preçoAzulejo;
 
         System.out.printf("O valor gasto foi: R$%.2f", valor);
+
+        sc.close();
         
     }
     

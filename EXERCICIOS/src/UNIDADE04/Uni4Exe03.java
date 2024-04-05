@@ -39,6 +39,9 @@ public class Uni4Exe03 {
         //     System.out.printf("n2: %d é maior que n1: %d", n2, n1);
                 
         //     }
+
+        sc.close();
        } 
+
      }
 

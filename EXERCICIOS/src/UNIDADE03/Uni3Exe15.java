@@ -19,6 +19,8 @@ public class Uni3Exe15 {
 
         System.out.printf("%d centena(s) %d dezena(s) %d unidade(s)", centena, dezena, unidade);
 
+        sc.close();
+
 
     }
     

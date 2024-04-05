@@ -24,6 +24,8 @@ public class Uni4Exe06 {
         System.out.println("Entrada incorreta");
     }
 
+    sc.close();
+
 
 
 

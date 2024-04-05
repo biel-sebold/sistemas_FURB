@@ -25,6 +25,8 @@ public class Uni4Exe10 {
         } else{
             System.out.println("Luluzinha é a caçula");
         }
+
+        sc.close();
     }
     
 }

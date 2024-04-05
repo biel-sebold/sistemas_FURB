@@ -18,6 +18,8 @@ public class Uni3Exe14 {
 
         System.out.printf("VELOCIDADE MÉDIA: %.1fkm/h\nCOMBUSTÍVEL GASTO: %.1fL", velocidade, combustível);
 
+        sc.close();
+
 
 
 

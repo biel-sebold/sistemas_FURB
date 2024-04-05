@@ -18,6 +18,8 @@ public class Uni3Exe05 {
 
         System.out.printf("O gasto total com %d frangos na granja foi de R$%.2f", frangos, gasto);
 
+        sc.close();
+
 
 
     }

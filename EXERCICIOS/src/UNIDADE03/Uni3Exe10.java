@@ -17,6 +17,8 @@ public class Uni3Exe10 {
         double hip = Math.sqrt(cat1 * cat1 + cat2 * cat2);
 
         System.out.printf("O comprimento da hipotenusa é: %.1f", hip);
+
+        sc.close();
     }
     
 }

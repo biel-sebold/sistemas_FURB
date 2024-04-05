@@ -13,6 +13,8 @@ public class Uni3Exe08 {
 
         double valorReais = valorDolares * cotacao;
         System.out.printf("O atendente deve devolver à pessoa R$%.2f", valorReais);
+
+        sc.close();
     }
     
 }

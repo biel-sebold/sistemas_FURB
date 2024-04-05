@@ -17,6 +17,8 @@ public class Uni3Exe01 {
         double area = A * B;
         System.out.printf("A área do retângulo é %.2f metros quadrados", area);
 
+        sc.close();
+
 
 
 

@@ -48,5 +48,7 @@ public class Uni4Exe21 {
 
         }
         System.out.printf("IMC = %.2f - %s", imc, classificacao);
+
+        sc.close();
     }
 }

@@ -23,6 +23,8 @@ public class Uni2Exe18 {
 
         System.out.printf("O valor gasto foi: R$%.2f", valor);
 
+        dig.close();
+
     }
     
 }

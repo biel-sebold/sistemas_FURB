@@ -21,6 +21,8 @@ public class Uni2Exe10 {
 
     System.out.printf("O tempo de duração do evento: %02d:%02d:%02d", horas, minutos, segundos);
 
+    dig.close();
+
         
     }
     

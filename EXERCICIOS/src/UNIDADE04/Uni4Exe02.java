@@ -21,6 +21,8 @@ public class Uni4Exe02 {
                 System.out.println("Número é ímpar");
             }
         }
+
+        sc.close();
     }
     
 }

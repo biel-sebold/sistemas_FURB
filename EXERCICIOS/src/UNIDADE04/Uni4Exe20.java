@@ -61,6 +61,8 @@ public class Uni4Exe20 {
 
         System.out.printf("A média é: %.1f com conceito %c e situação %s.", media, conceito, situacao );
 
+        sc.close();
+
 
 
 

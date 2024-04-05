@@ -18,6 +18,8 @@ public class Uni3Exe02 {
 
           System.out.printf("O valor do desconto é de R$ %.2f\nO preço do par de sapatos com desconto é R$ %.2f", desconto, valorDesconto);
 
+          sc.close();
+
 
 
     }

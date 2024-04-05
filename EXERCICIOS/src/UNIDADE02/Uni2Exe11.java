@@ -39,6 +39,8 @@ public class Uni2Exe11 {
         double areaRet_ladoAB = numA*numB;
         System.out.println("A área do retângulo de lado AB é: " + areaRet_ladoAB);
 
+        dig.close();
+
     }
     
 }

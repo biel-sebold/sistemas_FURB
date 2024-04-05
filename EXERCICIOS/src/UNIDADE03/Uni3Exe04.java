@@ -20,6 +20,8 @@ public class Uni3Exe04 {
 
         System.out.printf("O valor da média do aluno é igual a %.1f", media);
 
+        sc.close();
+
 
     }
     

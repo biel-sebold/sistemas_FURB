@@ -29,10 +29,8 @@ public class Uni3Exe16 {
         System.out.print("NÚMERO MÍNIMO DE NOTAS QUE O CAIXA DEVE OFERECER COMO TROCO\n");
         System.out.printf(" Nota(s) de 100: %.0f\n Nota(s) de 10: %.0f\n Nota(s) de 1: %.0f",
                                   notas100, notas10, notas1);
-                
-
-
-
+        
+        sc.close();
 
 
     }

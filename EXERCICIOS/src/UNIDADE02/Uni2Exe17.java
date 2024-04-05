@@ -30,6 +30,8 @@ public class Uni2Exe17 {
         System.out.printf("Salário Bruto: R$%.2f\n", salBruto);
         System.out.printf("Salário Líquido: R$%.2f", salLiquido);
 
+        dig.close();
+
     }
     
 }

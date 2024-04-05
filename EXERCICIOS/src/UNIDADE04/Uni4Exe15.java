@@ -11,6 +11,8 @@ public class Uni4Exe15 {
         System.out.print("Informe a quantos meses o funcionário foi admitido: ");
         int meses = sc.nextInt();
 
+        sc.close();
+
     }
     
 }

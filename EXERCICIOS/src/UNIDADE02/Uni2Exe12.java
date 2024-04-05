@@ -25,6 +25,8 @@ public class Uni2Exe12 {
 
         System.out.printf("A distância dos pontos é igual a: %.4f ", distancia);
 
+        dig.close();
+
     }
     
 }

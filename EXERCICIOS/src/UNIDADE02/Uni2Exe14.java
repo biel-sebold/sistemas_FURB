@@ -32,6 +32,8 @@ public class Uni2Exe14 {
         
         System.out.println(valor/1 + " nota(s) de R$ 1,00");
         valor = valor % 1;
+
+        dig.close();
         
     }
     

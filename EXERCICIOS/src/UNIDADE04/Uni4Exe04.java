@@ -29,6 +29,8 @@ public class Uni4Exe04 {
         //     System.out.println("Número não tem casas decimais");
             
         // } 
+
+        sc.close();
     }
     
 }

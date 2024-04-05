@@ -50,6 +50,8 @@ public class Uni4Exe13 {
 
             }
 
+    sc.close();
+
 
 
 

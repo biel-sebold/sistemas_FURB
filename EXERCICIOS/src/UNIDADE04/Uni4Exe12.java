@@ -39,6 +39,8 @@ public class Uni4Exe12 {
             System.out.println("Não formam um triângulo");
     
     }
+
+    sc.close();
     
   }
 }

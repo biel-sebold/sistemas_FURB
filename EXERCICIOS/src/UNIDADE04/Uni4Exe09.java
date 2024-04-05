@@ -21,6 +21,8 @@ public class Uni4Exe09 {
             System.out.println("Os números não são múltiplos");
         }
 
+        sc.close();
+
 
     }
     

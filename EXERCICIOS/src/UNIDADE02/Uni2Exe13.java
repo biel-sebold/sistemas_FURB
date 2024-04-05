@@ -13,6 +13,8 @@ public class Uni2Exe13 {
         int distancia = dig.nextInt();
         int tempo = distancia*2;
         System.out.printf("O carro tomará essa distância do outro em %d minutos", tempo);
+
+        dig.close();
         
     }
     

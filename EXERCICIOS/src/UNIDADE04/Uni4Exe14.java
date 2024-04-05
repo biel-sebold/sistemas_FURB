@@ -23,6 +23,8 @@ public class Uni4Exe14 {
         } else{
             System.out.println("Data Inválida");
         }
+
+        sc.close();
     }
     
 }
