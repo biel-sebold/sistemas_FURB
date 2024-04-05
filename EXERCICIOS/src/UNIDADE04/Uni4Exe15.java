@@ -8,8 +8,25 @@ public class Uni4Exe15 {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Informe o salário do funcionário: R$ ");
+        double salario = sc.nextDouble();
+
         System.out.print("Informe a quantos meses o funcionário foi admitido: ");
         int meses = sc.nextInt();
+
+        double reajuste;
+
+        if (meses <= 12) {
+            reajuste = 0.05;
+            
+        } else{
+            reajuste = 0.07;
+            
+        }
+
+        double valor = (salario * reajuste);
+
+        System.out.printf("O valor de reajuste que o funcionário receberá no seu salário será de: R$ %.2f", valor);    
 
         sc.close();
 
