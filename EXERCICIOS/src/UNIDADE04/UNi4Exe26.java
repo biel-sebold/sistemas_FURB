@@ -16,23 +16,48 @@ public class UNi4Exe26 {
         System.out.println("T: Área de um triângulo de base b e altura h\nQ: Área de um quadrado de lado l\nR: Área de um retângulo de base b e altura h\nC: Área de um círculo de raio r");
 
         char opcao = sc.nextLine().charAt(0);
+        // opcao = Character.toLowerCase(opcao);
 
         switch (opcao) {
-            case (char) 'T':
-                System.out.println("Informe a base: ");
-                float base = sc.nextFloat();
-                System.out.println("Informe a altura: ");
-                float altura = sc.nextFloat();
+            case (char) T:
+                System.out.print("Informe a base: ");
+                float baseT = sc.nextFloat();
+                System.out.print("Informe a altura: ");
+                float alturaT = sc.nextFloat();
 
-                float area = base * altura / 2;
+                float areaT = baseT * alturaT / 2;
+                System.out.printf("Área do triângulo = %.1f", areaT);
             break;
             
             case (char) 'Q':
-            sout    
+               System.out.print("Informe a medida do lado: ");
+               float lado = sc.nextFloat();
+               float areaQ = lado * lado;
+               System.out.printf("Área do quadrado = %.1f", areaQ);
+            break;
+
+            case (char) 'R':
+               System.out.print("Informe a base: ");
+               float baseR = sc.nextFloat();
+               System.out.print("Informe a base: ");
+               float alturaR = sc.nextFloat();
+
+               float areaR = baseR * alturaR;
+               System.out.printf("Área do retângulo = %.1f", areaR);
+            break;
+
+            case (char) 'C':
+               System.out.print("Informe o raio: ");
+               float raio = sc.nextFloat();
+               double areaC = Math.PI * Math.pow(raio, 2);
+               System.out.printf("Área do círculo = %.1f", areaC);
         
             default:
+            System.out.println("Opção inválida");
                 break;
         }
+
+        sc.close();
     }
 
 
