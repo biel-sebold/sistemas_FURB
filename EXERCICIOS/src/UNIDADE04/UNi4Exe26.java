@@ -13,13 +13,12 @@ public class UNi4Exe26 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Escolha uma das opções: ");
-        System.out.println("T: Área de um triângulo de base b e altura h\nQ: Área de um quadrado de lado l\nR: Área de um retângulo de base b e altura h\nC: Área de um círculo de raio r");
+        System.out.println("T: triângulo\nQ: quadrado\nR: retângulo\nC: círculo");
 
         char opcao = sc.nextLine().charAt(0);
-        // opcao = Character.toLowerCase(opcao);
 
         switch (opcao) {
-            case (char) T:
+            case (char) 'T':
                 System.out.print("Informe a base: ");
                 float baseT = sc.nextFloat();
                 System.out.print("Informe a altura: ");
