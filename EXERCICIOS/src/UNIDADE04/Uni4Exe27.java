@@ -14,17 +14,22 @@ public class Uni4Exe27 {
 
        Scanner sc = new Scanner(System.in);
 
-       System.out.print("Informe o horário de chegada (hh mm): ");
+       System.out.println("Informe o horário de chegada: ");
+       System.out.print("Chegada em horas: ");
        int chegadaH = sc.nextInt();
+       System.out.println("Chegada em minutos: ");
        int chegadaM = sc.nextInt();
 
-       System.out.print("Informe o horário de partida (hh mm): ");
+       System.out.println("Informe o horário de partida: ");
+       System.out.print("Partida em horas: ");
        int partidaH = sc.nextInt();
+       System.out.println("Partida em minutos");
        int partidaM = sc.nextInt();
 
        int tempoChegada = chegadaH * 60 + chegadaM;
        int tempoPartida = partidaH * 60 + partidaM;
        int tempoTotal = tempoPartida - tempoChegada; //em minutos
+       
        int qtdHoras = tempoTotal / 60;
        int qtdMinutos = tempoTotal % 60;
        System.out.printf("O tempo que ficou estacionado foi de %dh%dm\n", qtdHoras, qtdMinutos);

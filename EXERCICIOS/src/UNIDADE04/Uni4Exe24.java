@@ -69,17 +69,17 @@ public class Uni4Exe24 {
         switch (opcao) {
             case 1:
                 System.out.printf("A ordem será: %.1f, %.1f, %.1f\n", terceiro, segundo, primeiro);
-                System.out.println("Ordem Crescente");
+                System.out.println("(Ordem Crescente)");
             break;
 
             case 2:
                 System.out.printf("A ordem será: %.1f, %.1f, %.1f\n", primeiro, segundo, terceiro);
-                System.out.println("Ordem decrescente");
+                System.out.println("(Ordem decrescente)");
             break;
 
             case 3:
                 System.out.printf("A ordem será: %.1f, %.1f, %.1f\n", segundo, primeiro, terceiro);
-                System.out.println("O maior fica no meio");
+                System.out.println("(O maior fica no meio)");
             break;
         
             default:
