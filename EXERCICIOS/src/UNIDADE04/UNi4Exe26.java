@@ -17,6 +17,7 @@ public class UNi4Exe26 {
 
         char opcao = sc.nextLine().charAt(0);
 
+
         switch (opcao) {
             case (char) 'T':
                 System.out.print("Informe a base: ");
