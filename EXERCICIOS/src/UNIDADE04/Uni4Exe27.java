@@ -27,7 +27,7 @@ public class Uni4Exe27 {
        int tempoTotal = tempoPartida - tempoChegada; //em minutos
        int qtdHoras = tempoTotal / 60;
        int qtdMinutos = tempoTotal % 60;
-       System.out.printf("O tempo que ficou estacionado foi de %0d:%0d\n", qtdHoras, qtdMinutos);
+       System.out.printf("O tempo que ficou estacionado foi de %dh%dm\n", qtdHoras, qtdMinutos);
 
        double preco;
 
