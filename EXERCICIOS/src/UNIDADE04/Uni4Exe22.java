@@ -9,7 +9,7 @@ public class Uni4Exe22 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Escolha uma opção: ");
+        System.out.println("Escolha uma opção: ");
         System.out.println("\t1 - Ciência da Computação\n\t2 - Licenciatura da Computação\n\t3 - Sistemas de Informação");
         System.out.print("Escolha o curso: ");
         int curso = sc.nextInt();

@@ -12,7 +12,39 @@ public class Uni4Exe25 {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Escreva dois números: ");
+        float num1 = sc.nextFloat();
+        float num2 = sc.nextFloat();
+
+        System.out.println("Escolha uma opção: ");
+        System.out.println("1 - Soma\n2 - Diferença\n3 - Produto\n4 - Divisão");
+        int opcao = sc.nextInt();
+
+        switch (opcao) {
+            case 1:
+                System.out.println(num1 + num2);
+                break;
+            case 2:
+                System.out.println(num1 - num2);
+                break;
+            case 3:
+                System.out.println(num1 * num2);
+                break;
+            case 4:
+            if (num2 == 0) {
+                System.out.println("Opção inválida\nO denominador não pode ser zero");
+                
+            } else{
+                System.out.println(num1 / num2);
+            }
+                break;
         
+            default:
+            System.out.println("Opção inválida");
+                break;
+        }
+
+        sc.close();
 
 
     }

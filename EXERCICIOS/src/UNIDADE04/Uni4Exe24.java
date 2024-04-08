@@ -17,16 +17,29 @@ public class Uni4Exe24 {
         System.out.print("Informe o segundo valor: ");
         float valor2 = sc.nextFloat();
 
-        System.out.print("Informe  o terceiro valor: ");
+        System.out.print("Informe  o terceiro valor: \n");
         float valor3 = sc.nextFloat();
 
-        
+        System.out.println("Escolha uma das 3 opções: ");
+        System.out.println("1- Ordem crescente.\n2- Ordem decrescente.\n3- O maior valor ficar no meio");
 
-        
+        int opcao = sc.nextInt();
 
-        switch () {
-            case value:
+
+        switch (opcao) {
+            case 1:
+            if (valor1 > valor2 && valor2 > valor3 || valor2 > valor1 && valor1 > valor3) {
+                System.out.print(valor1);
+                System.out.print(valor2);
+                System.out.print(valor3);
                 
+            } else if () {
+                
+            }
+                break;
+            case 2:
+                break;
+            case 3:
                 break;
         
             default:
@@ -35,7 +48,7 @@ public class Uni4Exe24 {
 
 
 
-        
+        sc.close();
     }
 
 }
