@@ -48,7 +48,7 @@ public class UNi4Exe26 {
             case (char) 'C':
                System.out.print("Informe o raio: ");
                float raio = sc.nextFloat();
-               double areaC = Math.PI * Math.pow(raio, 2);
+               double areaC = Math.PI * Math.pow(raio,2);
                System.out.printf("Área do círculo = %.1f", areaC);
         
             default:

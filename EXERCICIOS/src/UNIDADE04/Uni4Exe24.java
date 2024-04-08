@@ -24,26 +24,66 @@ public class Uni4Exe24 {
         System.out.println("1- Ordem crescente.\n2- Ordem decrescente.\n3- O maior valor ficar no meio");
 
         int opcao = sc.nextInt();
+        float primeiro;
+        float segundo;
+        float terceiro;
 
+        if (valor1 > valor2 && valor1 > valor3) {
+            primeiro = valor1;
+        if (valor2 > valor3) {
+            segundo = valor2;
+            terceiro = valor3;
+            
+        } else{
+            segundo = valor3;
+            terceiro = valor2;
+
+        }
+            
+        } else if (valor2 > valor1 && valor2 > valor3) {
+            primeiro = valor2;
+        if (valor1 > valor3) {
+            segundo = valor1;
+            terceiro = valor3;
+
+            
+        } else{
+            segundo = valor3;
+            terceiro = valor1;
+
+        }
+        } else {
+            primeiro = valor3;
+            if (valor1 > valor2) {
+                segundo = valor1;
+                terceiro = valor2;
+                
+            } else{
+                segundo = valor2;
+                terceiro = valor1;
+            }
+            
+        }   
 
         switch (opcao) {
             case 1:
-            if (valor1 > valor2 && valor2 > valor3 || valor2 > valor1 && valor1 > valor3) {
-                System.out.print(valor1);
-                System.out.print(valor2);
-                System.out.print(valor3);
-                
-            } else if () {
-                
-            }
-                break;
+                System.out.printf("A ordem será: %.1f, %.1f, %.1f\n", terceiro, segundo, primeiro);
+                System.out.println("Ordem Crescente");
+            break;
+
             case 2:
-                break;
+                System.out.printf("A ordem será: %.1f, %.1f, %.1f\n", primeiro, segundo, terceiro);
+                System.out.println("Ordem decrescente");
+            break;
+
             case 3:
-                break;
+                System.out.printf("A ordem será: %.1f, %.1f, %.1f\n", segundo, primeiro, terceiro);
+                System.out.println("O maior fica no meio");
+            break;
         
             default:
-                break;
+                System.out.println("Opção inválida");
+            break;
         }
 
 
