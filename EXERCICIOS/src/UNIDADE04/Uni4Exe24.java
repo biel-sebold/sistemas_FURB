@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Uni4Exe24 {
     public static void main(String[] args) {
+        //AJUDADO//
         // Dados 3 valores, escreva um algoritmo que os informa em uma determinada ordem a partir de um menu de opções:
 // se opção = 1, escreva os 3 valores em ordem crescente
 // se opção = 2, escreva os 3 valores em ordem decrescente
