@@ -14,9 +14,9 @@ public class Uni3Exe14 {
         double tempo = sc.nextDouble();
 
         double velocidade = distancia / tempo;
-        double combustível = distancia / 12;
+        double combustivel = distancia / 12;
 
-        System.out.printf("VELOCIDADE MÉDIA: %.1fkm/h\nCOMBUSTÍVEL GASTO: %.1fL", velocidade, combustível);
+        System.out.printf("VELOCIDADE MÉDIA: %.1fkm/h\nCOMBUSTÍVEL GASTO: %.1fL", velocidade, combustivel);
 
         sc.close();
 

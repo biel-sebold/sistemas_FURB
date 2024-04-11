@@ -20,9 +20,9 @@ public class Uni3Exe12 {
 
         double salBruto = salHora * horas + (60.00 * dependentes);
 
-        double INSS = salBruto * 0.085;
-        double IR = salBruto * 0.05;
-        double salLiquido = salBruto - INSS - IR;
+        double inss = salBruto * 0.085;
+        double ir = salBruto * 0.05;
+        double salLiquido = salBruto - inss - ir;
         
         System.out.println("\nRELATÓRIO FINAL:");
         System.out.printf("Nome: %s\n", nome);
