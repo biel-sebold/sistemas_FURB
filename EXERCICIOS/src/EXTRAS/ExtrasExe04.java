@@ -15,7 +15,8 @@ public class ExtrasExe04 {
 // Urano (1.0693170234)
 // Netuno (1.3506625891)
 // Plutão (0.2252803261)
-// Depois de fazer as conversões, informe o quanto as pessoas pesariam se estivessem na Terra
+
+       // Depois de fazer as conversões, informe o quanto as pessoas pesariam se estivessem na Terra
 
        Scanner sc = new Scanner(System.in);
 
