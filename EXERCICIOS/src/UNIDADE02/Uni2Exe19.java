@@ -19,7 +19,7 @@ public class Uni2Exe19 {
         double D = dig.nextDouble();
 
         double A = B;
-        
+        double resultadoC = D;
 
         System.out.println("O valor de A é igual a: " + A);
         System.out.println("O valor de C é igual a: " + resultadoC + "e não" + C);
