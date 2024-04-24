@@ -9,6 +9,13 @@ public class Uni5Exe05 {
 
         Scanner sc = new Scanner (System.in);
 
+        System.out.println("Informe quantos termos terá a sequência: ");
+        int n = sc.nextInt();
+
+        for(int i = 1; i <= n; i++){
+            
+        }
+
         // sc.close();
 
 
