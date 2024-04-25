@@ -19,10 +19,10 @@ public class Uni5Exe06 {
 
 
     }
-    double media = variavel / 20;
-    System.out.printf("Média = %.1fm", media);
+       double media = variavel / 20;
+       System.out.printf("Média = %.1fm", media);
 
-    sc.close();
+       sc.close();
 }
 
 }
