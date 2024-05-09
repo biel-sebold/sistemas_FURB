@@ -8,8 +8,40 @@ public class Uni5Exe16 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Informe o gênero: ");
-        char genero = sc.nextLine().charAt(0);
+        System.out.print("Informe a altura: ");
+        double altura = sc.nextDouble();
+
+        System.out.print("Informe o gênero (M ou F ou O): ");
+        String entrada = sc.nextLine();
+        char genero = entrada.toLowerCase().charAt(0);
+
+        if (altura == 0) {
+
+            
+
+
+
+            
+        }
+       
+
+        double media;
+        int contador = 0;
+
+
+        while (altura != 0) {
+
+            System.out.print("Informe a altura: ");
+            altura = sc.nextDouble();
+            contador += altura;
+
+            System.out.print("Informe o gênero (M ou F ou O): ");
+            entrada = sc.nextLine();
+            genero = entrada.toLowerCase().charAt(0);
+
+
+            
+        }
 
         
 
