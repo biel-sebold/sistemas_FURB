@@ -10,6 +10,9 @@ public class Uni5Exe18 {
 
         Scanner sc = new Scanner (System.in);
 
+        System.out.print("Informe quantas casas foram visitadas: ");
+        int casas = sc.nextInt();
+
         System.out.print("Informe o número do canal (se desligada informar 'zero'): ");    
         String canal = sc.next().toLowerCase();
 
@@ -18,10 +21,15 @@ public class Uni5Exe18 {
         int canal9 = 0;
         int canal12 = 0;
 
+        int mediaP = 0;
+        int soma = 0;
+
         while (canal != "0") {
 
             System.out.println("Informe o número de pessoas assistindo a TV (se desligada informar 'zero'): ");
             String pessoas = sc.next().toLowerCase();
+
+            soma ;
 
             if (canal == "4") {
                 canal4++;
