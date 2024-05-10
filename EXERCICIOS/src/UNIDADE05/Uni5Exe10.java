@@ -11,15 +11,8 @@ public class Uni5Exe10 {
 
         Scanner sc = new Scanner (System.in);
 
-        for(double i = 0; i < 10; i++) {
-            
-
-        }
-
 
         // sc.close();
         
-        
-    }
-
+   }
 }
