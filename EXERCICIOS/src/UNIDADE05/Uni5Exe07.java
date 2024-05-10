@@ -9,7 +9,7 @@ public class Uni5Exe07 {
 
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Informe a quantidade de números: ");
+        System.out.print("Informe a quantidade de números: ");
         int n = sc.nextInt();
 
         double maior = Double.MIN_VALUE;
@@ -17,7 +17,7 @@ public class Uni5Exe07 {
        
         for (int i = 1; i <= n; i++){
 
-            System.out.printf("Digite o número %d: ", i);
+            System.out.printf("\nDigite o número %d: ", i);
             double numero = sc.nextDouble();
 
             if (numero > maior) {
@@ -28,10 +28,9 @@ public class Uni5Exe07 {
                 menor = numero;
             }
 
-
         }
 
-        System.out.printf("MAIOR: %f%nMENOR: %.1f", maior, menor);
+        System.out.printf("\nMAIOR: %.1f%nMENOR: %.1f", maior, menor);
 
         sc.close();
     }

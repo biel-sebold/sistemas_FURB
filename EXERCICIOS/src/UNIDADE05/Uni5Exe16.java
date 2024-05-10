@@ -8,46 +8,50 @@ public class Uni5Exe16 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe a altura: ");
+        int contador = 1;
+
+        int contadorF = 0;
+        int contadorG = 0;
+        
+        double somaF = 0;
+        double somaG = 0;
+
+        System.out.printf("Informe a altura da %dº pessoa: ", contador);
         double altura = sc.nextDouble();
-
-        System.out.print("Informe o gênero (M ou F ou O): ");
-        String entrada = sc.nextLine();
-        char genero = entrada.toLowerCase().charAt(0);
-
-        if (altura == 0) {
-
-            
-
-
-
-            
-        }
-       
-
-        double media;
-        int contador = 0;
-
 
         while (altura != 0) {
 
-            System.out.print("Informe a altura: ");
-            altura = sc.nextDouble();
-            contador += altura;
-
             System.out.print("Informe o gênero (M ou F ou O): ");
-            entrada = sc.nextLine();
-            genero = entrada.toLowerCase().charAt(0);
-
-
+            String entrada = sc.next();
+            char genero = entrada.toLowerCase().charAt(0);
             
+            //AJUDADO NA ORDEM
+            if (genero == 'f') {
+                contadorF++;
+                somaF+=altura;
+                
+            }
+
+            contadorG++;
+            somaG+=altura;
+
+            //AJUDADO NA ORDEM
+            System.out.print("Informe a altura da próxima pessoa: ");
+            altura = sc.nextDouble(); 
+
         }
 
+        double mediaF = somaF / contadorF;
+        double mediaG = somaG / contadorG;
+
+        //AJUDADO
+        if (contadorF > 0) {
+            System.out.printf("Média de altura das mulheres é: %.2fcm", mediaF);
+        } else {
+            System.out.println("Nenhuma mulher foi registrada");
+        }
         
-
-        
-
-
+        System.out.printf("\nMédia de altura do grupo é: %.2fcm", mediaG);
 
         sc.close();
     }

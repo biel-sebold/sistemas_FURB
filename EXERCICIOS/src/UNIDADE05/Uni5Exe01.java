@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Uni5Exe01 {
     public static void main(String[] args) {
        //DANTON
-       //Descreva um algoritmo que leia 20 números inteiros (todos até 20) e escreva, para cada número lido, se o mesmo for par ou ímpar.
+       //Descreva um algoritmo que leia 20 números inteiros e escreva, para cada número lido, se o mesmo é par ou ímpar.
 
         Scanner sc = new Scanner(System.in);   
 

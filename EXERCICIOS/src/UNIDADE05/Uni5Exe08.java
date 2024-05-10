@@ -6,7 +6,7 @@ public class Uni5Exe08 {
     public static void main(String[] args) {
         //Descreva um algoritmo que leia um número inteiro n e, dados n números inteiros, descreva um algoritmo que:
         // escreva o menor valor negativo;
-        // escreva para a média dos números positivos.
+        // escreva a média dos números positivos.
 
         Scanner sc = new Scanner(System.in);
 
@@ -23,7 +23,7 @@ public class Uni5Exe08 {
            int numero = sc.nextInt();
 
            if (numero < 0) {
-                numeroNeg = menorNeg;
+                numero = menorNeg;
             
            } else if (numero > 0) {
                 media = numero / n; 

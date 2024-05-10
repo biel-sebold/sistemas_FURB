@@ -7,22 +7,17 @@ public class Uni5Exe10 {
         //O número 3025 possui a seguinte característica:
             //30+25=55 --- 55^2 = 3025
         //Escreva um programa que pesquise e imprima os 10 primeiros números naturais que apresentam tal propriedade. Outros exemplos:
-            //20+25=45 --- 45^2 = 2025
-
-        double num = -5;    
+            //20+25=45 --- 45^2 = 2025   
 
         Scanner sc = new Scanner (System.in);
 
-        for(double i = -5; i <= 100; i++) {
-
-            System.out.println();
-
+        for(double i = 0; i < 10; i++) {
             
 
         }
 
 
-        sc.close();
+        // sc.close();
         
         
     }

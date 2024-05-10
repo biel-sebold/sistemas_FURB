@@ -16,22 +16,22 @@ public class ExemploWhile {
 
 
     //LEITOR DE INFINITOS NOMES ATÉ ESCREVER FIM
-        // Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        // System.out.print("Informe nome 1(fim termina): ");
-        // String nome = sc.nextLine();
-        // int contador = 1;
+        System.out.print("Informe nome 1(fim termina): ");
+        String nome = sc.nextLine();
+        int contador = 1;
 
-        // while (!nome.equalsIgnoreCase("fim")) {
+        while (!nome.equalsIgnoreCase("fim")) {
   
-        //         contador++;
-        //         System.out.println("boa noite " + nome); 
-        //         System.out.printf("Informe nome %d(fim termina): ", contador);
-        //         nome = sc.nextLine();       
-        // }
+                contador++;
+                System.out.println("boa noite " + nome); 
+                System.out.printf("Informe nome %d(fim termina): ", contador);
+                nome = sc.nextLine();       
+        }
 
 
-        // sc.close();
+        sc.close();
     
     }
 }

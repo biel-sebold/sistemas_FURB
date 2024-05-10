@@ -20,10 +20,6 @@ public class Uni5Exe12 {
 
         for(int i = 1; i <= n; i++) {
 
-            System.out.println(i);
-            System.out.print(i++);
-            System.out.println(i++);
-
 
         }
 
