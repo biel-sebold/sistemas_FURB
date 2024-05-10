@@ -9,17 +9,17 @@ public class Uni5Exe06 {
 
         Scanner sc = new Scanner (System.in);
 
-        double variavel = 0;
+        double soma = 0;
 
         for(int i = 1; i <= 20; i++){
 
         System.out.printf("Informe a altura da pessoa %d: ", i);
         double altura = sc.nextDouble();
-        variavel += altura;
+        soma += altura;
 
 
     }
-       double media = variavel / 20;
+       double media = soma / 20;
        System.out.printf("Média = %.1fm", media);
 
        sc.close();
