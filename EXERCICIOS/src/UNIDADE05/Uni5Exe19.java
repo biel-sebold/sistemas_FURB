@@ -13,6 +13,7 @@ public class Uni5Exe19 {
 
         double desconto = 0;
         double total = 0;
+        double somaTotal = 0;
 
         while (compra != 0) {
 
@@ -25,10 +26,18 @@ public class Uni5Exe19 {
                 total = compra - (compra * 0.15);
             }
 
+            somaTotal += total;
+
+            System.out.printf("O valor total a pagar é de R$%.2f (%.0f%% de desconto)", total, desconto * 100); 
+
+            System.out.print("\nInforme o valor da compra: R$");
+            compra = sc.nextDouble();
+
             
             
         }
 
+        System.out.printf("O valor total ao final do dia foi de R$%.2f", somaTotal);
 
         sc.close();
 
