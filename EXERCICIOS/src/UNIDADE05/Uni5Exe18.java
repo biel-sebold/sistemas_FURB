@@ -26,10 +26,8 @@ public class Uni5Exe18 {
 
         while (canal != "0") {
 
-            System.out.println("Informe o número de pessoas assistindo a TV (se desligada informar 'zero'): ");
-            String pessoas = sc.next().toLowerCase();
-
-            soma ;
+            System.out.println("Informe o número de pessoas assistindo a TV (se desligada informar '0'): ");
+            int pessoas = sc.nextInt();         
 
             if (canal == "4") {
                 canal4++;
