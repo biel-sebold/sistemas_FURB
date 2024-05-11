@@ -11,7 +11,7 @@ public class Uni5Exe23 {
         System.out.print("Informe o nome do  vendedor: ");
         String nome = sc.next();
 
-        String dados = sc.next().toLowerCase();
+        String dados = "";
 
         while (dados != "n" ) {
 
@@ -23,8 +23,12 @@ public class Uni5Exe23 {
             System.out.printf("Informe o preço unitário do produto %d: R$", i);
             double preco = sc.nextDouble();
 
-            System.out.printf("Informe quantas unidades foram vendidas: ");
+            System.out.printf("\nInforme quantas unidades foram vendidas: ");
             int quantidade = sc.nextInt();
+
+            double totalVendas = preco * quantidade;
+
+            System.out.printf("O total de vendas do vendedor %s foi R$%.2f", nome, totalVendas);
     
         }
        
