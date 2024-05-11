@@ -20,10 +20,10 @@ public class Uni5Exe23 {
 
             for(int i = 1; i <= n; i++)
             
-            System.out.printf("Informe o preço unitário do produto %d: R$", i);
+            System.out.print("Informe o preço unitário do produto: R$");
             double preco = sc.nextDouble();
 
-            System.out.printf("\nInforme quantas unidades foram vendidas: ");
+            System.out.printf("Informe quantas unidades foram vendidas: ");
             int quantidade = sc.nextInt();
 
             double totalVendas = preco * quantidade;
@@ -33,7 +33,7 @@ public class Uni5Exe23 {
         }
        
 
-        sc.close();
+        // sc.close();
     }
 
 }
