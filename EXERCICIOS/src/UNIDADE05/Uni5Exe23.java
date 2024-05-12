@@ -8,32 +8,47 @@ public class Uni5Exe23 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe o nome do  vendedor: ");
-        String nome = sc.next();
-
         String dados = "";
+        double soma = 0;
+        double totalVendas = 0;
 
-        while (dados != "n" ) {
+        while (!dados.equalsIgnoreCase("n")) {
 
-            System.out.print("Informe o número de produtos vendidos: ");
+            System.out.print("\nInforme o nome do  vendedor: ");
+            String nome = sc.next();
+
+            System.out.print("\nInforme quantos produtos foram vendidos: ");
             int n = sc.nextInt();
 
-            for(int i = 1; i <= n; i++)
+
+            for(int i = 1; i <= n; i++) {
             
-            System.out.print("Informe o preço unitário do produto: R$");
+            System.out.print("\nInforme o seu preço unitário: R$");
             double preco = sc.nextDouble();
 
             System.out.printf("Informe quantas unidades foram vendidas: ");
             int quantidade = sc.nextInt();
 
-            double totalVendas = preco * quantidade;
+            totalVendas = preco * quantidade;
 
-            System.out.printf("O total de vendas do vendedor %s foi R$%.2f", nome, totalVendas);
+            soma += totalVendas;
     
+            }
+
+            double salario = totalVendas * 0.3;
+
+            System.out.printf("\n\n%s:", nome.toUpperCase());
+            System.out.printf("\nTOTAL DE VENDAS: R$%.2f", soma);
+            System.out.printf("\nSALÁRIO: R$%.2f", salario);
+
+
+            System.out.print("\n\nDeseja digitar os dados de mais um vendedor: s (SIM) / n (NÃO)?");
+            dados = sc.next();
+
+
         }
        
-
-        // sc.close();
+        sc.close();
     }
 
 }
