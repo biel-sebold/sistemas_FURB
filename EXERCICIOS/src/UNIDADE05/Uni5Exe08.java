@@ -13,9 +13,10 @@ public class Uni5Exe08 {
         System.out.print("Informe quantos números: ");
         int n = sc.nextInt();
 
-        int menorNeg = Integer.MAX_VALUE;
+        int menorNeg = Integer.MIN_VALUE;
         double media = 0;
-        int numeroNeg = 0;
+        int numeroNeg;
+        int soma = 0;
 
         for(int i = 1; i <= n; i++){
 
@@ -26,14 +27,15 @@ public class Uni5Exe08 {
                 numero = menorNeg;
             
            } else if (numero > 0) {
-                media = numero / n; 
+                soma+=numero;
+                media = soma; 
             
            }
         }
 
-        System.out.printf("MENOR VALOR NEGATIVO: %d%nMÉDIA DOS POSITIVOS: %d", numeroNeg, media);
+        System.out.printf("MENOR VALOR NEGATIVO: %d%nMÉDIA DOS POSITIVOS: %d", menorNeg, media);
 
-        // sc.close();
+        sc.close();
     }
 
 }
