@@ -10,6 +10,8 @@ public class ExCaracterString {
         String nome = sc.next();
         char letra = nome.toLowerCase().charAt(0);
         System.out.println(letra);
+
+        sc.close();
     }
     
 }

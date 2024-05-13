@@ -17,9 +17,13 @@ public class Uni5Exe18 {
         String canal = sc.next().toLowerCase();
 
         int canal4 = 0;
+        int pessoas4 = 0;
         int canal5 = 0;
+        int pessoas5 = 0;
         int canal9 = 0;
+        int pessoas9 = 0;
         int canal12 = 0;
+        int pessoas12 = 0;
 
         int mediaP = 0;
         int soma = 0;
@@ -31,20 +35,27 @@ public class Uni5Exe18 {
 
             if (canal == "4") {
                 canal4++;
+                pessoas4++;
                 
             } else if (canal == "5") {
                 canal5++;
+                pessoas5++;
                 
             } else if (canal == "9") {
                 canal9++;
+                pessoas9++;
                 
             } else if (canal == "12") {
-                canal12++;                
+                canal12++; 
+                pessoas12++;               
+            }
+
+                
             }
             
         }
 
-        sc.close();
+        // sc.close();
     }
 
-}
+

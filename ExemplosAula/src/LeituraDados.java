@@ -11,6 +11,8 @@ public class LeituraDados {
         float valorReal = teclado.nextFloat();
         System.out.println("O valor inteiro é: " + numero1);
         System.out.println("O valor real é: " + valorReal);
+
+        teclado.close();
         
 
     }

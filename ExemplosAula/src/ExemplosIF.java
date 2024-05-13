@@ -30,6 +30,8 @@ public class ExemplosIF {
         // }
         // System.out.println("Fim"); 
 
+        sc.close();
+
 
         
         
