@@ -8,37 +8,32 @@ public class Uni5Exe24 {
 
         Scanner sc =  new Scanner(System.in);
 
-        int total = 0;
+        double total = 0;
         double peso = 0;
         String entrada = "";
 
         System.out.print("Informe o limite diário (em quilogramas): ");
         double limite = sc.nextDouble();
 
-        while (limite > total || !entrada.equalsIgnoreCase("n")) {
-            System.out.print("\nInforme quantos peixes foram pescados: ");
-            int n = sc.nextInt();
-
-            for(int i = 1; i <= n; i++) {
+        while (!entrada.equalsIgnoreCase("n")) {
 
             System.out.print("Informe o peso (em gramas): ");
             peso = sc.nextDouble();
 
             total += peso;
+  
+            if (total / 1000 > limite) {
+                System.out.println("LIMITE DIÁRIO EXCEDIDO");
+                break;          
             }
 
-            System.out.printf("\nPESO TOTAL DA PESCA: %dg\n", total);
-
-            System.out.print("\nDeseja informar o peso de mais um peixe: s (SIM) / n (NÃO)?");
+            System.out.print("Deseja informar o peso de mais um peixe: s (SIM) / n (NÃO)?");
             entrada = sc.next();
 
-        }
+            System.out.printf("\nPESO TOTAL DA PESCA: %.2f kg\n", (total / 1000));
 
-        if (total > limite) {
-            System.out.println("LIMITE DIÁRIO EXCEDIDO");
+            }
+            
+            sc.close();
         }
-
-        // sc.close();
     }
-
-}

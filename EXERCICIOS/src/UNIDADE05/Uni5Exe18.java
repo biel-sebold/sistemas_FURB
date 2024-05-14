@@ -10,11 +10,7 @@ public class Uni5Exe18 {
 
         Scanner sc = new Scanner (System.in);
 
-        System.out.print("Informe quantas casas foram visitadas: ");
-        int casas = sc.nextInt();
-
-        System.out.print("Informe o número do canal (se desligada informar 'zero'): ");    
-        String canal = sc.next().toLowerCase();
+        int total = 0;
 
         int canal4 = 0;
         int pessoas4 = 0;
@@ -25,37 +21,76 @@ public class Uni5Exe18 {
         int canal12 = 0;
         int pessoas12 = 0;
 
-        int mediaP = 0;
-        int soma = 0;
+        System.out.print("Informe quantas casas foram visitadas: ");
+        int casas = sc.nextInt();
+
+        System.out.print("\nInforme o número do canal (se desligada informar 'zero'): ");    
+        String canal = sc.next().toLowerCase();
+
+        for(int i = 0; i <= casas; i++) {
 
         while (canal != "0") {
 
-            System.out.println("Informe o número de pessoas assistindo a TV (se desligada informar '0'): ");
-            int pessoas = sc.nextInt();         
+            if (canal == "zero") {
+                continue;            
+            }
 
-            if (canal == "4") {
+            System.out.print("Informe o número de pessoas assistindo a TV (se desligada informar 'zero'): ");
+            int pessoas = sc.nextInt();   
+            
+            switch (canal) {
+                case "4":
                 canal4++;
                 pessoas4++;
-                
-            } else if (canal == "5") {
+                total++;                  
+                    break;
+
+                case "5":
                 canal5++;
                 pessoas5++;
-                
-            } else if (canal == "9") {
+                total++;                          
+                    break;
+
+                case "9":
                 canal9++;
                 pessoas9++;
-                
-            } else if (canal == "12") {
+                total++;                         
+                    break;
+
+                case "12":
                 canal12++; 
-                pessoas12++;               
-            }
+                pessoas12++;
+                total++;                             
+                    break;
 
-                
-            }
+                case "zero":
+                System.out.println("TV DESLIGADA");                                           
+                    break;
             
-        }
+                default:
+                System.out.println("CANAL INEXISTENTE");
+                    break;
+            }
 
-        // sc.close();
+            System.out.print("\nInforme o número do canal (se desligada informar 'zero'): ");    
+            canal = sc.next().toLowerCase();
+      
+        }
+    }
+
+            System.out.println("PERCENTUAIS DE AUDIÊNCIA: \n");
+
+            double audiencia4 = (pessoas4/total) * 100;
+            System.out.printf("Canal 4: %.1f%%", audiencia4);
+            double audiencia5 = (pessoas5/total) * 100;
+            System.out.printf("Canal 5: %.1f%%", audiencia5);
+            double audiencia9 = (pessoas9/total) * 100;
+            System.out.printf("Canal 9: %.1f%%", audiencia9);
+            double audiencia12 = (pessoas12/total) * 100;
+            System.out.printf("Canal 12: %.1f%%", audiencia12);
+
+            sc.close();   
+        }
     }
 
 
