@@ -8,28 +8,28 @@ public class Uni5Exe20 {
 
         Scanner sc = new Scanner(System.in);
 
-        int tSegundos = 0;
+        int tempo = 0;
         double massaFinal = 0;
 
         System.out.print("Informe a massa inicial (kg): ");
         double massa = sc.nextDouble();
+        massaFinal = massa; //AJUDADO (para atualizar o valor da massa a cada loop)
 
         while (massaFinal >= 0.5) {
-           tSegundos+=50;
-           massaFinal = massa / 2;
-            
+
+           massaFinal = massaFinal / 2; //AJUDADO
+           tempo+=50;  
         }
 
-        // int horas = tSegundos / 3600;
-        // int minutos = (tSegundos % 3600) / 60;
-        // int segundos = tSegundos % 60;
+        int horas = tempo / 3600;
+        int minutos = (tempo % 3600) / 60;
+        int segundos = tempo % 60;
 
-        System.out.printf("MASSA INICIAL: %.1f\n", massa);
+        System.out.printf("\nMASSA INICIAL: %.1f\n", massa);
         System.out.printf("MASSA FINAL: %.1f\n", massaFinal);
-        // System.out.printf("TEMPO: %02d:%02d:%02d", horas, minutos, segundos);
-        System.out.printf("TEMPO: %d", tSegundos);
+        System.out.printf("TEMPO: %02d:%02d:%02d", horas, minutos, segundos);
 
-        // sc.close();
+        sc.close();
     }
 
 }

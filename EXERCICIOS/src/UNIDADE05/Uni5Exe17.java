@@ -14,6 +14,9 @@ public class Uni5Exe17 {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Informe o número de inscrição: ");
+        int num = sc.nextInt();
+
         int contador = 0;
         double altura = 0;
 
@@ -24,10 +27,7 @@ public class Uni5Exe17 {
         int numMenor = 0;
 
         double soma = 0;
-
-        System.out.print("Informe o número de inscrição: ");
-        int num = sc.nextInt();
-
+        
         while (num != 0) {
             System.out.print("Informe a altura do atleta: ");
             altura = sc.nextDouble();

@@ -45,7 +45,6 @@ public class Uni5Exe23 {
             System.out.print("\n\nDeseja digitar os dados de mais um vendedor: s (SIM) / n (NÃO)?");
             dados = sc.next();
 
-
         }
        
         sc.close();

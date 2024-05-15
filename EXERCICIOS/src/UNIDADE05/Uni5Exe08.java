@@ -10,25 +10,29 @@ public class Uni5Exe08 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe quantos números: ");
+        System.out.print("Informe n números: ");
         int n = sc.nextInt();
 
-        int menorNeg = Integer.MIN_VALUE;
         double media = 0;
-        int numeroNeg;
         int soma = 0;
+        int num = 0;
+        int menorNeg = Integer.MIN_VALUE;
 
         for(int i = 1; i <= n; i++){
 
            System.out.printf("Informe o número %d: ", i);
-           int numero = sc.nextInt();
+           num = sc.nextInt();
 
-           if (numero < 0) {
-                numero = menorNeg;
+           if (num < 0 && num > menorNeg) { //AJUDADO
+               menorNeg = num;
             
-           } else if (numero > 0) {
-                soma+=numero;
-                media = soma; 
+           } else if (num > 0) { //AJUDADO
+                soma+=num;
+            
+           }
+
+           if (soma > 0) { //AJUDADO
+            media = soma / n;
             
            }
         }
