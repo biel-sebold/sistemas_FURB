@@ -1,0 +1,14 @@
+*As estruturas de dados ampliam o conceito de variáveis, pois permitem armazenar diversas informações a partir da definição de uma única variável.​
+
+**VETORES** (tipos estruturados unidimensionais)
+- permitem armazenar diversos dados de um mesmo tipo (homogêneos) em uma única variável​
+- Cada dado armazenado é identificada por um índice (posição em que o mesmo se encontra dentro da estrutura​)
+- 0 __ 1 __ 2 __ 3 (4 posições)
+
+**DENOMINAÇÃO**
+- TIPO: define os elementos que serão armazenados no vetor (podem ser tipos simples ou classes)
+- TAMANHO: define o número de elementos do vetor.​
+- ÍNDICE: define a posição do elemento no vetor  
+(pode ser definido através de valores constantes, variáveis ou expressões)
+
+
