@@ -9,20 +9,23 @@ public class Uni5Exe22 {
 
         Scanner sc = new Scanner(System.in);
 
-        double sal95 = 2000;
-        double sal96 = 2000 + (sal95 * 0.015);
-        int ano = 2024;
-        int proxAno = 0;
-        int antAno = 0;
+        int anoAtual = 2024;
+        double salarioInicial = 2000.00;
+        int ano = 1996;
 
-        while (ano > 1997) {
-             
+        while (ano <= anoAtual) {
+            double aumento = 0.015;
+            aumento *= 2;
+            salarioInicial *= (1 + aumento); 
+            //Se não adicionar 1 ao aumento percentual, estaria apenas multiplicando o salário pelo aumento
+            ano++;
 
-            
         }
 
+        System.out.printf("O salário atual do funcionário é: R$ %.2f", salarioInicial);
 
-        sc.close();
+
+        // sc.close();
     }
 
 }
