@@ -17,13 +17,17 @@ public class Uni5Exe27 {
         Scanner sc = new Scanner (System.in);
 
         int novo = 0;
-
-        System.out.print("Informe o dia do mês (Abril): ");
-        int dia = sc.nextInt();
+        int maior = Integer.MIN_VALUE;
+        int diaMaior = 0;
+        int manha = 0;
+        int tarde = 0;
 
         while (novo != 2) {
 
-            if (dia < 1 || dia > 30) {
+            System.out.print("Informe o dia do mês (Abril): ");
+            int dia = sc.nextInt();
+
+            while (dia < 1 || dia > 30) {
                 System.out.println("\nDIA INÁLIDO");
                 System.out.print("\nInforme o dia do mês (Abril): ");
                 dia = sc.nextInt();
@@ -31,10 +35,19 @@ public class Uni5Exe27 {
 
             System.out.print("Informe o total de peças produzidas pela manhã: ");
             int pecasM = sc.nextInt();
+            manha+=pecasM;
+
             System.out.print("Informe o total de peças produzidas pela tarde: ");
             int pecasT = sc.nextInt();
+            tarde+=pecasT;
 
             int soma = pecasM + pecasT;
+
+            if (soma > maior) {
+                maior = soma;
+                dia = diaMaior;
+            }
+
             double salario = 0;
 
             if (dia >= 1 && dia <= 15) {
@@ -52,17 +65,23 @@ public class Uni5Exe27 {
                 
             }    
 
-            System.out.printf("Salário: %.2f", salario);
+            System.out.printf("Salário(%02d/04): R$%.2f\n", dia, salario);
 
-            System.out.println("Novo funcionário (1.sim 2.não)?");
+            System.out.print("Novo funcionário (1. sim) (2. não)?");
             novo = sc.nextInt();
                 
         }
 
-        
-        
+        System.out.printf("DIA DE MAIOR PRODUÇÃO: %02d/04 (%d peças)\n", diaMaior, maior);
 
-        sc.close();
+        if (manha > tarde) {
+            System.out.println("\nPERÍODO MAIS PRODUTIVO: Manhã");
+            
+        } else {
+            System.out.println("PERÍODO MAIS PRODUTIVO: Tarde");
+        }
+
+        // sc.close();
     }
 
 }
