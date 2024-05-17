@@ -12,9 +12,9 @@ public class Uni5Exe22 {
         int anoAtual = 2024;
         double salarioInicial = 2000.00;
         int ano = 1996;
+        double aumento = 0.015;
 
-        while (ano <= anoAtual) {
-            double aumento = 0.015;
+        while (ano <= anoAtual) {   
             aumento *= 2;
             salarioInicial *= (1 + aumento); 
             //Se não adicionar 1 ao aumento percentual, estaria apenas multiplicando o salário pelo aumento
@@ -23,7 +23,6 @@ public class Uni5Exe22 {
         }
 
         System.out.printf("O salário atual do funcionário é: R$ %.2f", salarioInicial);
-
 
         // sc.close();
     }
