@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 //Descreva um algoritmo que leia 10 números inteiros e os coloque em um vetor de 10 posições do tipo inteiro. Escreva na ordem inversa em que foram lidos. FAÇA UM MÉTODO PARA LER E OUTRO PARA ESCREVER.
 
-public class Uni6Met01 {
-    private Uni6Met01() {
+public class Uni6Exe01Met {
+    private Uni6Exe01Met() {
 
         Scanner sc = new Scanner(System.in);
         int valores[] = new int [10];
@@ -30,7 +30,7 @@ public class Uni6Met01 {
         }
     }
     public static void main(String[] args) {
-        new Uni6Met01();
+        new Uni6Exe01Met();
     }
 
 }

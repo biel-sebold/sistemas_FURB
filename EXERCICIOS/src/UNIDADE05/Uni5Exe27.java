@@ -48,22 +48,22 @@ public class Uni5Exe27 {
                 dia = diaMaior;
             }
 
-            double salario = 0;
-
             if (dia >= 1 && dia <= 15) {
                 if (soma > 100 && pecasM > 30 && pecasT > 30) {
-                    salario = soma * 0.80;
+                    double salario = soma * 0.80;
                     
                 } else {
-                    salario = soma * 0.50;
+                    double salario = soma * 0.50;
 
                 }
             }
 
             if (dia >= 16 && dia <= 30) {
-                salario = (pecasM * 0.40) + (pecasT * 0.30);
+                double salario = (pecasM * 0.40) + (pecasT * 0.30);
                 
             }    
+
+            double salario = 0;
 
             System.out.printf("Salário(%02d/04): R$%.2f\n", dia, salario);
 
@@ -72,14 +72,14 @@ public class Uni5Exe27 {
                 
         }
 
-        System.out.printf("DIA DE MAIOR PRODUÇÃO: %02d/04 (%d peças)\n", diaMaior, maior);
+        // System.out.printf("DIA DE MAIOR PRODUÇÃO: %02d/04 (%d peças)\n", diaMaior, maior);
 
-        if (manha > tarde) {
-            System.out.println("\nPERÍODO MAIS PRODUTIVO: Manhã");
+        // if (manha > tarde) {
+        //     System.out.println("\nPERÍODO MAIS PRODUTIVO: Manhã");
             
-        } else {
-            System.out.println("PERÍODO MAIS PRODUTIVO: Tarde");
-        }
+        // } else {
+        //     System.out.println("PERÍODO MAIS PRODUTIVO: Tarde");
+        // }
 
         // sc.close();
     }

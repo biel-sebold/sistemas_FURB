@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Uni5Exe31 {
     public static void main(String[] args) {
+        //BELLETTI
         //Dado um número inteiro positivo, determine a sua decomposição em fatores primos. A saída do programa deve ser semelhante ao exemplo abaixo:
 
         // número	decomposição
@@ -16,34 +17,41 @@ public class Uni5Exe31 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe um valor: ");
-        int valor = sc.nextInt();
+        System.out.print("Insira um número inteiro positivo: ");
+        int numero = sc.nextInt();
+        double numPrimo = 2;
 
-        int resultado = 0;
-        int decremento = 0;
-        while (valor >= 0) {
+        System.out.println("Número  | Decomposição");
 
-            if (valor % 2 == 0) {
-                 decremento = 2;
+        while(numero != 1){
+            boolean divisivel = false;
+
+            while(!divisivel){
+                boolean isPrimo = true;
                 
-            } else if (valor % 3 == 0) {
-                 decremento = 3;
-                
-            } else if (valor % 5 == 0) {
-                 decremento = 5;
-                
-            } else if (valor % 7 == 0) {
-                decremento = 7;
-            } else {
-                decremento = 11;
+                if((double)numero%numPrimo != 0){
+                    numPrimo++;
+                    isPrimo = false;
+                }else{
+                    divisivel = true;
+                }
+                while(!isPrimo){
+                   isPrimo = true;
+                   for (int i = 2; i < numPrimo; i++) {
+                        if(numPrimo%i == 0){
+                            isPrimo = false;
+                            numPrimo++;
+                        }
+                    }
+                }
             }
-
-            resultado = valor / decremento;
-            valor = resultado;
-
-            System.out.println(resultado);
-            
+         
+            System.out.printf("%d\t| %.0f%n", numero, numPrimo);
+            numero /= numPrimo;
         }
-    }
 
+        System.out.println(1);
+
+        sc.close();
+    }
 }
