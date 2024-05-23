@@ -29,11 +29,77 @@ public class Uni5Exe33 {
         int voto5 = 0;
         int voto6 = 0;
         int total = 0;
+        int voto = 0;
 
         do {
-            System.out.println();
-        } while()
-        sc.close();
+            System.out.print("\nCandidato 1 | Candidato 2 | Candidato 3 | Candidato 4 | " + 
+                                "Voto nulo 5 | Voto em branco 6\n" +
+                                "Informe seu voto: ");
+            voto = sc.nextInt();
+
+        } while(voto >= 1 && voto <= 6);
+
+        while (voto != 0) {
+
+            switch (voto) {
+                case 1:
+                    voto1++;
+                    total++;
+                    break;
+
+                case 2:
+                    voto2++;
+                    total++;
+                    break;
+
+                case 3:
+                    voto3++;
+                    total++;
+                    break;
+
+                case 4:
+                    voto4++;
+                    total++;
+                    break;
+
+                case 5:
+                    voto5++;
+                    total++; 
+                    break;
+
+                case 6:
+                    voto6++;
+                    total++;  
+                    break;
+            
+                default:
+                    System.out.println("!!!OPÇÃO INCORRETA!!!");
+                    break;    
+            }
+
+            System.out.print("\nCandidato 1 | Candidato 2 | Candidato 3 | Candidato 4 | " + 
+                                "Voto nulo 5 | Voto em branco 6\n" +
+                                "Informe seu voto: ");
+            voto = sc.nextInt();
+
+        }
+
+        System.out.println("*** TOTAL DE VOTOS ***");
+        System.out.printf("CANDIDATO 1: %d votos\n", voto1);
+        System.out.printf("CANDIDATO 2: %d votos\n", voto2);
+        System.out.printf("CANDIDATO 3: %d votos\n", voto3);
+        System.out.printf("CANDIDATO 4: %d votos\n\n", voto4);
+
+        System.out.println("*** TOTAL VOTOS NULOS ***");
+        System.out.printf("%d votos\n\n", voto5);
+
+        System.out.println("*** TOTAL VOTOS EM BRANCO ***");
+        System.out.printf("%d votos\n\n", voto6);
+
+        System.out.println("*** PERCENTUAL NULOS/BRANCOS ***");
+        System.out.printf("%.2f", (voto5 + voto6) / (double)total * 100);
+
+        // sc.close();
     }
 
 }
