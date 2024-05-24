@@ -2,9 +2,11 @@ package EXERCICIOS.src.UNIDADE06;
 
 import java.util.Scanner;
 
-public class Uni6Exe03Met {
+//Descreva um algoritmo que leia 12 valores reais e os coloque em um vetor de 12 posições do tipo real. Em seguida, modifique o vetor de modo que os valores das posições ímpares sejam aumentados em 5% e os das posições pares sejam aumentados em 2%. Imprima o vetor resultante. Faça um método para ler os valores, outro para ajustar os valores dentro do vetor e outro para escrever os valores atualizados do vetor.
 
-    private Uni6Exe03Met() {
+public class Uni6Exe03 {
+
+    private Uni6Exe03() {
         Scanner sc = new Scanner(System.in);
         double valores[] = new double[12];
         leia(sc, valores);
@@ -40,7 +42,7 @@ public class Uni6Exe03Met {
         }
     }
     public static void main(String[] args) {
-        new Uni6Exe03Met();
+        new Uni6Exe03();
         
     }
 }
