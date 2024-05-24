@@ -24,22 +24,22 @@ public class Uni5Exe31 {
         System.out.println("Número  | Decomposição");
 
         while(numero != 1){
-            boolean divisivel = false;
+            boolean div = false;
 
-            while(!divisivel){
-                boolean isPrimo = true;
+            while(!div){
+                boolean primo = true;
                 
                 if((double)numero%numPrimo != 0){
                     numPrimo++;
-                    isPrimo = false;
+                    primo = false;
                 }else{
-                    divisivel = true;
+                    div = true;
                 }
-                while(!isPrimo){
-                   isPrimo = true;
+                while(!primo){
+                   primo = true;
                    for (int i = 2; i < numPrimo; i++) {
                         if(numPrimo%i == 0){
-                            isPrimo = false;
+                            primo = false;
                             numPrimo++;
                         }
                     }

@@ -21,10 +21,11 @@ public class Uni5Exe27 {
         int diaMaior = 0;
         int manha = 0;
         int tarde = 0;
+        double salario = 0; //AJUDADO
 
         while (novo != 2) {
 
-            System.out.print("Informe o dia do mês (Abril): ");
+            System.out.print("\nInforme o dia do mês (Abril): ");
             int dia = sc.nextInt();
 
             while (dia < 1 || dia > 30) {
@@ -45,43 +46,41 @@ public class Uni5Exe27 {
 
             if (soma > maior) {
                 maior = soma;
-                dia = diaMaior;
+                diaMaior = dia; //AJUDADO
             }
 
             if (dia >= 1 && dia <= 15) {
                 if (soma > 100 && pecasM > 30 && pecasT > 30) {
-                    double salario = soma * 0.80;
+                    salario = soma * 0.80;
                     
                 } else {
-                    double salario = soma * 0.50;
+                    salario = soma * 0.50;
 
                 }
             }
 
             if (dia >= 16 && dia <= 30) {
-                double salario = (pecasM * 0.40) + (pecasT * 0.30);
+                salario = (pecasM * 0.40) + (pecasT * 0.30);
                 
             }    
 
-            double salario = 0;
+            System.out.printf("\nSalário(%02d/04): R$%.2f\n", dia, salario);
 
-            System.out.printf("Salário(%02d/04): R$%.2f\n", dia, salario);
-
-            System.out.print("Novo funcionário (1. sim) (2. não)?");
+            System.out.print("\nNovo funcionário (1. sim) (2. não)?");
             novo = sc.nextInt();
                 
         }
 
-        // System.out.printf("DIA DE MAIOR PRODUÇÃO: %02d/04 (%d peças)\n", diaMaior, maior);
+        System.out.printf("\nDIA DE MAIOR PRODUÇÃO: %02d/04 (%d peças)", diaMaior, maior);
 
-        // if (manha > tarde) {
-        //     System.out.println("\nPERÍODO MAIS PRODUTIVO: Manhã");
+        if (manha > tarde) {
+            System.out.printf("\nPERÍODO MAIS PRODUTIVO: Manhã (%d peças)", manha); //AJUDADO
             
-        // } else {
-        //     System.out.println("PERÍODO MAIS PRODUTIVO: Tarde");
-        // }
+        } else {
+            System.out.printf("\nPERÍODO MAIS PRODUTIVO: Tarde (%d peças)", tarde); //AJUDADO
+        }
 
-        // sc.close();
+        sc.close();
     }
 
 }

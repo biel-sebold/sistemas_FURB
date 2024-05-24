@@ -37,7 +37,7 @@ public class Uni5Exe33 {
                                 "Informe seu voto: ");
             voto = sc.nextInt();
 
-        } while(voto >= 1 && voto <= 6);
+        } while(voto <= 1 && voto >= 6); //BELLETTI
 
         while (voto != 0) {
 
@@ -99,7 +99,7 @@ public class Uni5Exe33 {
         System.out.println("*** PERCENTUAL NULOS/BRANCOS ***");
         System.out.printf("%.2f", (voto5 + voto6) / (double)total * 100);
 
-        // sc.close();
+        sc.close();
     }
 
 }
