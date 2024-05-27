@@ -11,8 +11,8 @@ public class Uni6Exe03 {
         Scanner sc = new Scanner(System.in);
         double valores[] = new double[12];
         leia(sc, valores);
-        ajustar();
-        imprimir();
+        ajustar(valores);
+        imprimir(valores);
 
     }
 

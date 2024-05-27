@@ -22,13 +22,99 @@ public class Uni6Exe05 {
     private Uni6Exe05() {
         Scanner sc = new Scanner(System.in);
 
-        int rapaz[] = new int[5];
-        int moca[] = new int[5];
+        String perguntas[] = {"Gosta de música sertaneja", 
+                             "Gosta de futebol",
+                             "Gosta de seriados",
+                             "Gosta de redes sociais",
+                             "Gosta da Oktoberfest"};
+
+        String respostasR[] = ler(sc, perguntas, "Rapaz");
+        String respostasG[] = ler(sc, perguntas, "Garota");
+        int afinidade = calcular(respostasR, respostasG);
+        String status = determinar(afinidade);
+        System.out.println(status);
     }
 
-    private void leia(Scanner s, int respostasR[], int respostasM[]) {
-        System.out.print("Gosta de música sertaneja?\nR:. ");
-        respostasR[i]
+
+    private String[]ler(Scanner s, String perguntas[], String id) {
+
+        String respostas[] = new String[perguntas.length];
+
+        System.out.printf("\n*** RESPOSTAS DO(A) - %s *** \n", id);
+
+        for(int i = 0; i < perguntas.length; i++) {
+            System.out.printf("%s: \n", perguntas[i]);
+            respostas[i] = s.next().toUpperCase();
+        }
+
+        return respostas;
     }
+
+
+    private int calcular(String respostasR[], String respostasG[]) {
+
+        int afinidade = 0;
+
+        for(int i = 0; i < respostasG.length; i++) {
+
+            if (respostasG[i].equals(respostasR[i])) {
+                afinidade += 3;
+
+            } else if 
+            ((respostasG[i].equals("IND") && 
+                (respostasR[i].equals("SIM") || 
+                respostasR[i].equals("NÃO")
+                ))
+            ||        
+             (respostasG[i].equals("IND") &&
+                (respostasR[i].equals("SIM") ||
+                respostasR[i].equals("NÃO")
+                ))
+            ) {
+
+                afinidade += 1;
+
+            } else if 
+            ((respostasR[i].equals("SIM") && respostasG[i].equals("NÃO")) ||
+             (respostasG[i].equals("SIM") && respostasR[i].equals("NÃO")) 
+            ) {
+
+                afinidade -= 2;
+                
+            }
+
+        }
+
+        return afinidade;
+    }
+
+
+    private String determinar(int afinidade) {
+
+        if (afinidade == 15) {
+            return "\n\nCasem!!!";
+            
+        } else if (afinidade >= 10) {
+            return "\n\nVocês têm muita coisa em comum";
+            
+        } else if (afinidade >= 5) {
+            return "\n\nTalvez não dê certo :(";
+            
+        } else if (afinidade >= 0) {
+            return "\n\nVale um encontro.";
+            
+        } else if (afinidade >= -9) {
+            return "\n\nMelhor não perder tempo";
+            
+        } else {
+            return "\n\nVocês se odeiam!";
+        }
+    }
+
+    public static void main(String[] args) {
+        new Uni6Exe05();
+    }
+
+
 
 }
