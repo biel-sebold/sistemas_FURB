@@ -6,5 +6,37 @@ import java.util.Scanner;
 
 public class Uni6Exe06 {
 
+    private Uni6Exe06() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Informe um valor N (inteiro): ");
+        int valorN = sc.nextInt();
+
+        
+
+    }
+
+    private double[] ler(Scanner s, double vetor[]) {
+
+        double valores[] = new double[vetor.length];
+
+        for(int i = 0; i <= vetor.length; i++) {
+            System.out.printf("Informe o %dº número real: ", i);
+    
+        }
+
+        System.out.print("\n\nInforme um outro valor real: ");
+        double real = s.nextDouble();
+
+
+    }
+
+    private boolean[] conferir(boolean opcao) {
+
+        if (opcao) {
+            
+        }
+    }
+
     
 }
