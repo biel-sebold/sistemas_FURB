@@ -21,12 +21,12 @@ public class Uni6Exe04 {
 
     }
 
-    private void leia(Scanner s, int vetor[], String nomeVetor) {
-        System.out.printf("*** LENDO VETOR: %s ***\n", nomeVetor);
+    private void leia(Scanner scan, int vetor[], String nomeVetor) {
+        System.out.printf("*** LENDO VETOR: %scan ***\n", nomeVetor);
 
         for(int i = 0; i < vetor.length; i++) {
             System.out.printf("Posição %d: ", i + 1);
-            vetor[i] = s.nextInt();
+            vetor[i] = scan.nextInt();
     
         }
     }
@@ -41,7 +41,7 @@ public class Uni6Exe04 {
     }
 
     private void imprimir(int vetor[], String nomeVetor) {
-        System.out.printf("\n\n*** IMPRIMINDO VETOR %s ***\n", nomeVetor);
+        System.out.printf("\n\n*** IMPRIMINDO VETOR %scan ***\n", nomeVetor);
         
         for(int i = 0; i < vetor.length; i++) {
             System.out.printf("%d, ", vetor[i]);

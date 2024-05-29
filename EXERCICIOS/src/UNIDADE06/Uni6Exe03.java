@@ -8,20 +8,20 @@ import java.util.Scanner;
 public class Uni6Exe03 {
 
     private Uni6Exe03() {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         double valores[] = new double[12];
-        leia(sc, valores);
+        leia(scan, valores);
         ajustar(valores);
         imprimir(valores);
 
     }
 
-    private void leia(Scanner sc, double vetor[]) {
+    private void leia(Scanner scan, double vetor[]) {
         System.out.println("**** LEITURA DO VETOR ****");
 
         for(int i = 0; i < vetor.length; i++) {
             System.out.printf("Valor %d: ", i + 1);
-            vetor[i] = sc.nextDouble();
+            vetor[i] = scan.nextDouble();
         }
     }
 

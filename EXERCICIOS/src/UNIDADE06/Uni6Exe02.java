@@ -16,14 +16,14 @@ public class Uni6Exe02 {
 
     }
 
-    private void leia(Scanner s, double vetor[]) {
+    private void leia(Scanner scan, double vetor[]) {
 
         System.out.println("**** LEITURA DO VETOR ****");
 
         for(int i = 0; i < vetor.length; i++) {
 
             System.out.printf("Valor %d: ", i + 1);
-            vetor[i] = s.nextDouble();
+            vetor[i] = scan.nextDouble();
         }
     }
 

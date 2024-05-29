@@ -36,15 +36,15 @@ public class Uni6Exe05 {
     }
 
 
-    private String[]ler(Scanner s, String perguntas[], String id) {
+    private String[]ler(Scanner scan, String perguntas[], String id) {
 
         String respostas[] = new String[perguntas.length];
 
-        System.out.printf("\n*** RESPOSTAS DO(A) - %s *** \n", id);
+        System.out.printf("\n*** RESPOSTAS DO(A) - %scan *** \n", id);
 
         for(int i = 0; i < perguntas.length; i++) {
-            System.out.printf("%s: \n", perguntas[i]);
-            respostas[i] = s.next().toUpperCase();
+            System.out.printf("%scan: \n", perguntas[i]);
+            respostas[i] = scan.next().toUpperCase();
         }
 
         return respostas;

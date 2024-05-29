@@ -15,10 +15,10 @@ public class Uni6Exe01Met {
 
     }
 
-    private void leia(Scanner s, int vetor[]) {
+    private void leia(Scanner scan, int vetor[]) {
         for( int i = 0; i < vetor.length; i++) {
             System.out.printf("Informe o número %d: ", i + 1);
-            vetor[i] = s.nextInt();
+            vetor[i] = scan.nextInt();
         }
     }
 
