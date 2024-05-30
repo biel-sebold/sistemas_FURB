@@ -33,7 +33,6 @@ public class Uni6Exe07 {
 
         return numero;
 
-
     }
 
 
@@ -78,6 +77,7 @@ public class Uni6Exe07 {
         System.out.println("");
     }
 
+    
     private void ordenaVetor(int vetor[]) {
 
         int aux;
