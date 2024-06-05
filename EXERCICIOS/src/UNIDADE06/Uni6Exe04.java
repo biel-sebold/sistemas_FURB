@@ -10,19 +10,19 @@ public class Uni6Exe04 {
         int vetor1[] = new int[10];
         int vetor2[] = new int[10];
 
-        leia(sc, vetor1, "V1");
-        leia(sc, vetor2, "V2"); 
+        ler(sc, vetor1, "V1");
+        ler(sc, vetor2, "V2"); 
 
         imprimir(vetor1, "V1");
         imprimir(vetor2, "V2");
 
-        imprimir(somaVetor(vetor1, vetor2), "SOMA");
+        imprimir(somar(vetor1, vetor2), "SOMA");
       
 
     }
 
-    private void leia(Scanner scan, int vetor[], String nomeVetor) {
-        System.out.printf("*** LENDO VETOR: %scan ***\n", nomeVetor);
+    private void ler(Scanner scan, int vetor[], String nome) {
+        System.out.printf("*** LENDO VETOR: %s ***\n", nome);
 
         for(int i = 0; i < vetor.length; i++) {
             System.out.printf("Posição %d: ", i + 1);
@@ -31,7 +31,7 @@ public class Uni6Exe04 {
         }
     }
 
-    private int[] somaVetor(int v1[], int v2[]) {
+    private int[] somar(int v1[], int v2[]) {
         int soma[] = new int[v1.length];
 
         for(int i = 0; i < v1.length; i++) {
@@ -40,8 +40,8 @@ public class Uni6Exe04 {
         return soma;
     }
 
-    private void imprimir(int vetor[], String nomeVetor) {
-        System.out.printf("\n\n*** IMPRIMINDO VETOR %scan ***\n", nomeVetor);
+    private void imprimir(int vetor[], String nome) {
+        System.out.printf("\n\n*** IMPRIMINDO VETOR %sc ***\n", nome);
         
         for(int i = 0; i < vetor.length; i++) {
             System.out.printf("%d, ", vetor[i]);

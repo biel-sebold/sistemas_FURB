@@ -3,20 +3,22 @@ package EXERCICIOS.src.UNIDADE06;
 import java.util.Scanner;
 
 //DANTON
-//Descreva um algoritmo que leia 12 valores reais e os coloque em um vetor de 12 posições do tipo real. Em seguida, modifique o vetor de modo que os valores das posições ímpares sejam aumentados em 5% e os das posições pares sejam aumentados em 2%. Imprima o vetor resultante. Faça um método para ler os valores, outro para ajustar os valores dentro do vetor e outro para escrever os valores atualizados do vetor.
+//Descreva um algoritmo que ler 12 valores reais e os coloque em um vetor de 12 posições do tipo real. Em seguida, modifique o vetor de modo que os valores das posições ímpares sejam aumentados em 5% e os das posições pares sejam aumentados em 2%. Imprima o vetor resultante. Faça um método para ler os valores, outro para ajustar os valores dentro do vetor e outro para escrever os valores atualizados do vetor.
 
 public class Uni6Exe03 {
 
     private Uni6Exe03() {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+
         double valores[] = new double[12];
-        leia(scan, valores);
+
+        ler(sc, valores);
         ajustar(valores);
         imprimir(valores);
 
     }
 
-    private void leia(Scanner scan, double vetor[]) {
+    private void ler(Scanner scan, double vetor[]) {
         System.out.println("**** LEITURA DO VETOR ****");
 
         for(int i = 0; i < vetor.length; i++) {
@@ -26,9 +28,12 @@ public class Uni6Exe03 {
     }
 
     private void ajustar(double vetor[]) {
+
         for(int i = 0; i < vetor.length; i++) {
+
             if ((i + 1) % 2 == 0) {
                 vetor[i] += vetor[i] * 0.02;
+                
             } else {
                 vetor[i] += vetor[i] * 0.05;
             }

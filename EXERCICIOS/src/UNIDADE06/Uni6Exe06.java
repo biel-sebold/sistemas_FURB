@@ -7,36 +7,47 @@ import java.util.Scanner;
 public class Uni6Exe06 {
 
     private Uni6Exe06() {
-        Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe um valor N (inteiro): ");
-        int valorN = sc.nextInt();
+      System.out.print("Informe o tamanho do vetor (N): ");
+      int tamanho = sc.nextInt();
 
-        
-
+      double vetor[] = new double[tamanho];
+  
+      ler(sc, vetor);
+  
+      if (pesquisar(sc, vetor)) {
+          System.out.println("Encontrou..");
+      }
+  
+      sc.close();
     }
+  
 
-    private double[] ler(Scanner s, double vetor[]) {
+    private void ler(Scanner scan, double vetor[]) {
 
-        double valores[] = new double[vetor.length];
+      for (int i = 0; i < vetor.length; i++) {
 
-        for(int i = 0; i <= vetor.length; i++) {
-            System.out.printf("Informe o %dº número real: ", i);
-    
+        System.out.printf("Valor %d: ", i+1);
+        vetor[i] = scan.nextInt();
+      }
+    }
+  
+
+    private boolean pesquisar(Scanner scan, double vetor[]) {
+
+      System.out.println("\nInforme valor a ser pesquisado: ");
+      double valorPesquisado = scan.nextInt();
+
+      for (int i = 0; i < vetor.length; i++) {
+        if (vetor[i] == valorPesquisado) {
+          return true;
         }
-
-        System.out.print("\n\nInforme um outro valor real: ");
-        double real = s.nextDouble();
-
-
+      }
+      return false;
     }
-
-    private boolean[] conferir(boolean opcao) {
-
-        if (opcao) {
-            
-        }
+  
+    public static void main(String[] args) {
+      new Uni6Exe06();
     }
-
-    
-}
+  }
