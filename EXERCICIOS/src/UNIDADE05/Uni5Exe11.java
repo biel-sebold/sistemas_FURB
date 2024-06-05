@@ -14,7 +14,6 @@ public class Uni5Exe11 {
         for(int i = 1; i <= 16; i++) {
 
             quebraTotal = quebra *= 3;
-
         }
 
         System.out.printf("São quebrados ao final de cada dia: %d biscoitos", quebraTotal);

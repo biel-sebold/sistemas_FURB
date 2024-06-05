@@ -14,10 +14,10 @@ public class Uni5Exe01 {
             int numero = sc.nextInt();
 
             if (numero % 2 == 0) {
-                System.out.println("Número par");
+                System.out.println("Número par\n\n");
                 
             } else{
-                System.out.println("Número ímpar");
+                System.out.println("Número ímpar\n\n");
             }
 
             // System.out.printf("O número %d é %s%n", i, numero % 2 == 0 ? "par" : "ímpar");//USOU TERNÁRIOS
