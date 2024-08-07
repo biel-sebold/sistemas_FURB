@@ -1,4 +1,4 @@
-package POO.Exercícios.L01Q1.src;
+package POO.Exercicios.src.LISTA01.questao2;
 
 public class Pessoa {
     double altura;
