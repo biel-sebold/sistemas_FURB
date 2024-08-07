@@ -2,8 +2,6 @@ package POO.Exercicios.src.LISTA01.questao4;
 
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class App {
     public static void main(String[] args) {
 
@@ -15,30 +13,25 @@ public class App {
 
         for (int i = 0; i < 3; i++) {
 
-            System.out.printf("Informe o nome %d: ", i+1);
+            System.out.print("\nInforme o nome: ");
             String nome = sc.next();
 
-            System.out.printf("Informe a altura de %d: ", i+1);
+            System.out.printf("Informe a altura (%s): ", nome);
             double altura = sc.nextDouble();
             
-            System.out.printf("Informe o peso de %d: ", i+1);
+            System.out.printf("Informe o peso (%s): ", nome);
             double peso = sc.nextDouble();
 
-            Pessoa pessoa = new Pessoa();
+            pessoas[i] = new Pessoa(nome, altura, peso); //conectando entre o construtor e o App.java
 
-            pessoa.nome = nome;
-            pessoa.altura = altura;
-            pessoa.peso = peso;
-            pessoas[i] = pessoa;
-
-            
         }
         
         for (int i = pessoas.length - 1; i >= 0; i--) {
-
-            System.out.printf("Nome: %s", pessoas[i].nome);
             
-            System.out.printf("\n>>>IMC PESSOA %d = %.1f<<<\n\n", i+1, pessoas[i].calcularImc());
+            System.out.printf("Nome: %s\n", pessoas[i].nome);
+            System.out.printf("Altura: %.2f\n", pessoas[i].altura);
+            System.out.printf("Peso: %.1f\n", pessoas[i].peso);
+            System.out.printf("IMC PESSOA %d = %.1f\n\n", i, pessoas[i].calcularImc());
         }
 
         sc.close();

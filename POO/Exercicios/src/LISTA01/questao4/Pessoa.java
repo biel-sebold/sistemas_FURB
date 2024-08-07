@@ -5,7 +5,7 @@ public class Pessoa {
     double altura;
     double peso;
 
-    public Pessoa(String nome, double altura, double peso){
+    public Pessoa(String nome, double altura, double peso){ //construtor
         this.nome = nome;
         this.altura = altura;
         this.peso = peso;
