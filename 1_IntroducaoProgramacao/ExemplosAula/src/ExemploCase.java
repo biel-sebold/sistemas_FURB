@@ -1,5 +1,3 @@
-package src;
-
 public class ExemploCase {
     public static void main(String[] args) {
         

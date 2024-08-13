@@ -1,5 +1,3 @@
-package src;
-
 public class ExemploForContinue {
     public static void main(String[] args) {
         

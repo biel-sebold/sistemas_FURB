@@ -1,5 +1,3 @@
-package src;
-
 public class MeusDados {
     public static void main(String[] args) {
         System.out.println("DADOS PESSOAIS:\n");

@@ -1,5 +1,3 @@
-package src;
-
 public class ExemploIFEOU {
     public static void main(String[] args) {
         //EXEMPLO VERDADEIRO

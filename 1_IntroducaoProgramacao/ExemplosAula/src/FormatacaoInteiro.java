@@ -1,5 +1,3 @@
-package src;
-
 public class FormatacaoInteiro {
     public static void main(String[] args) {
         int numero1 = 1;

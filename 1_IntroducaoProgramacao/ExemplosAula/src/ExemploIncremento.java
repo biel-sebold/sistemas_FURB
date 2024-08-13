@@ -1,5 +1,3 @@
-package src;
-
 public class ExemploIncremento {
     public static void main(String[] args) {
         int x = 0;
