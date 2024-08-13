@@ -1,4 +1,4 @@
-package POO.Exercicios.src.LISTA01.questao4;
+package Poo.exercicios.src.lista01.questao4;
 
 import java.util.Scanner;
 
@@ -28,7 +28,7 @@ public class App {
         
         for (int i = pessoas.length - 1; i >= 0; i--) {
             
-            System.out.printf("Nome: %s\n", pessoas[i].nome);
+            System.out.printf("\n\nNome: %s\n", pessoas[i].nome);
             System.out.printf("Altura: %.2f\n", pessoas[i].altura);
             System.out.printf("Peso: %.1f\n", pessoas[i].peso);
             System.out.printf("IMC PESSOA %d = %.1f\n\n", i, pessoas[i].calcularImc());

@@ -1,4 +1,4 @@
-package POO.Exercicios.src.LISTA01.questao2;
+package Poo.exercicios.src.lista01.questao2;
 
 import java.util.Scanner;
 

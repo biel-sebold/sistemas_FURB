@@ -1,4 +1,4 @@
-package POO.Exercicios.src.LISTA01.questao1;
+package Poo.exercicios.src.lista01.questao1;
 
 public class App {
     public static void main(String[] args) {

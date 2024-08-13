@@ -1,3 +1,5 @@
+package Poo.exercicios.src.lista01.questao1;
+
 public class Pessoa {
     double altura;
     double peso;

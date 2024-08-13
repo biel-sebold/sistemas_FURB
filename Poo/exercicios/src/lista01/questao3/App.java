@@ -1,3 +1,5 @@
+package Poo.exercicios.src.lista01.questao3;
+
 import java.util.Scanner;
 
 public class App {
