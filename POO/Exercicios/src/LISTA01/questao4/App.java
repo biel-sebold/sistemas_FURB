@@ -11,7 +11,7 @@ public class App {
 
         Pessoa[] pessoas = new Pessoa[3];
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < pessoas.length; i++) {
 
             System.out.print("\nInforme o nome: ");
             String nome = sc.next();
