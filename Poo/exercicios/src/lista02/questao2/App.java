@@ -30,13 +30,49 @@ public class App {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+    
 
-        ContaBancaria nubank = new ContaBancaria();
-        ContaBancaria bradesco = new ContaBancaria();
+        System.out.print("Informe o número da conta 1: ");
+        String numero1 = sc.next();
 
-        nubank.transferir(bradesco, 0);
+        System.out.print("Informe o titular da conta 1: ");
+        String titular1 = sc.next();
 
-        nubank.depositar(1000);
 
+        System.out.print("\nInforme o número da conta 2: ");
+        String numero2 = sc.next();
+
+        System.out.print("Informe o titular da conta 2: ");
+        String titular2 = sc.next();
+
+        double saldo1 = 0;
+        double saldo2 = 0;
+
+
+        ContaBancaria conta1 = new ContaBancaria();
+        ContaBancaria conta2 = new ContaBancaria();
+
+        conta1.setNumero(numero1);
+        conta1.setTitular(titular1);
+        conta1.setSaldo(saldo1);
+        conta2.setNumero(numero2);
+        conta2.setTitular(titular2);
+        conta2.setSaldo(saldo2);
+
+    
+        conta1.depositar(1000);
+        conta1.depositar(700);
+
+        conta2.depositar(5000);
+
+        conta2.sacar(3000);
+
+        conta2.transferir(conta1, 1800);
+
+        System.out.println("\n\n>>>RESULTADO<<<\n\n");
+        System.out.printf("TITULAR: %s\nSALDO: R$%.1f", titular1, saldo1);
+        System.out.printf("\n\nTITULAR: %s\nSALDO: R$%.1f", titular2, saldo2);
+
+        // sc.close();
     }
 }
