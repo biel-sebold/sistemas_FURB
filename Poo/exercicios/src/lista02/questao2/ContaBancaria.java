@@ -28,26 +28,20 @@ public class ContaBancaria {
         return this.saldo;
     }
 
-    public void setSaldo(double saldo){
-        this.saldo = saldo;
-    }
-
 
     public void depositar(double valor){
 
         if (valor < 0) {
-            throw new IllegalAccessError("VALOR NÃO PERMITIDO");
-            
-        }
+            throw new IllegalAccessError("VALOR NÃO PERMITIDO"); 
+        } 
 
         this.saldo += valor;
     }
 
     public void sacar (double valor){
 
-        if (valor < 0) {
+        if (valor < 0 && valor > this.saldo) {
             throw new IllegalAccessError("VALOR NÃO PERMITIDO");
-            
         }
 
         this.saldo -= valor;
@@ -56,8 +50,8 @@ public class ContaBancaria {
 
     public void transferir(ContaBancaria contaDestino, double valor){
 
-        this.saldo -= valor; //PEGA SALDO DO OBJETO
-        contaDestino.setSaldo(valor);
+        this.sacar(valor);     //PEGA SALDO DO OBJETO
+        contaDestino.depositar(valor);
 
     }
 
