@@ -29,8 +29,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-    
+        Scanner sc = new Scanner(System.in); 
 
         System.out.print("Informe o número da conta 1: ");
         String numero1 = sc.next();
@@ -45,6 +44,7 @@ public class App {
         System.out.print("Informe o titular da conta 2: ");
         String titular2 = sc.next();
 
+
         ContaBancaria conta1 = new ContaBancaria();
         ContaBancaria conta2 = new ContaBancaria();
 
@@ -53,20 +53,23 @@ public class App {
         conta2.setNumero(numero2);
         conta2.setTitular(titular2);
 
-    
+        // a. Realize depósitos na primeira conta nos valores de R$ 1.000,00 e R$ 700,00.
         conta1.depositar(1000);
         conta1.depositar(700);
 
+        // b. Realize depósitos na segunda conta nos valores de R$ 5.000,00.
         conta2.depositar(5000);
 
+        // c. Faça um saque na 2ª conta no valor de R$ 3.000,00.
         conta2.sacar(3000);
 
+        // d. Transfira R$ 1.800,00 da 2ª conta para a 1ª conta.
         conta2.transferir(conta1, 1800);
 
         System.out.println("\n\n>>>RESULTADO<<<\n\n");
-        System.out.printf("TITULAR: %s\nSALDO: R$%.1f", titular1,);
-        System.out.printf("\n\nTITULAR: %s\nSALDO: R$%.1f", titular2,);
+        System.out.printf("TITULAR: %s\nSALDO: R$%.2f", conta1.getTitular(), conta1.getSaldo());
+        System.out.printf("\n\nTITULAR: %s\nSALDO: R$%.2f", conta2.getTitular(), conta2.getSaldo());
 
-        // sc.close();
+        sc.close();
     }
 }

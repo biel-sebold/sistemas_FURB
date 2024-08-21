@@ -40,7 +40,7 @@ public class ContaBancaria {
 
     public void sacar (double valor){
 
-        if (valor < 0 && valor > this.saldo) {
+        if (valor < 0 || valor > this.saldo) {
             throw new IllegalAccessError("VALOR NÃO PERMITIDO");
         }
 
