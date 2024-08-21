@@ -1,5 +1,7 @@
 package Poo.exercicios.src.lista04;
 
+import java.util.Scanner;
+
 // //A classe abaixo foi projetada para representar retângulos. Implemente esta classe, conforme descrito abaixo.
 // a) O construtor Retangulo() deverá estabelecer que está sendo criado um retângulo em que a altura e comprimento
 // são iguais à 0.
@@ -22,7 +24,23 @@ package Poo.exercicios.src.lista04;
 
 public class App {
 
-    private int altura;
-    private 
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Informe a altura do retânegulo: ");
+        int altura = sc.nextInt();
+        
+        System.out.print("Informe o comprimento do retêngulo: ");
+        int comprimento = sc.nextInt();
+
+        
+
+        sc.close();
+    }
+    
+
+
+
 
 }
