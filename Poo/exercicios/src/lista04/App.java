@@ -28,11 +28,19 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Informe a altura do retânegulo: ");
+        System.out.print("Informe a altura do retângulo: ");
         int altura = sc.nextInt();
         
-        System.out.print("Informe o comprimento do retêngulo: ");
+        System.out.print("Informe o comprimento do retângulo: ");
         int comprimento = sc.nextInt();
+
+        Retangulo ret = new Retangulo();
+
+        ret.setAltura(altura);
+        ret.setComprimento(comprimento);
+
+        System.out.printf("\n\nPERÍMETRO: %d", ret.calcularPerimetro());
+        System.out.printf("\nÁREA: %d", ret.calcularArea());
 
         
 

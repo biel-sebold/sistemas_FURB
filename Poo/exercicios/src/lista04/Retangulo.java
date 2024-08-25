@@ -50,13 +50,14 @@ public class Retangulo {
     public int calcularPerimetro(){
 
         int perimetro = (altura + comprimento) * 2;
+        return perimetro;
 
     }
 
     public int calcularArea(){
 
         int area = altura * comprimento;
-
+        return area;
     }
 
 
