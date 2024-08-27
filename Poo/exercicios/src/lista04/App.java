@@ -34,10 +34,7 @@ public class App {
         System.out.print("Informe o comprimento do retângulo: ");
         int comprimento = sc.nextInt();
 
-        Retangulo ret = new Retangulo();
-
-        ret.setAltura(altura);
-        ret.setComprimento(comprimento);
+        Retangulo ret = new Retangulo(altura, comprimento);
 
         System.out.printf("\n\nPERÍMETRO: %d", ret.calcularPerimetro());
         System.out.printf("\nÁREA: %d", ret.calcularArea());
