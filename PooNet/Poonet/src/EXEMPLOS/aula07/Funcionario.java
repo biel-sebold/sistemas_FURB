@@ -10,4 +10,23 @@ package EXEMPLOS.aula07;
  */
 public class Funcionario {
     
+    private String nome;
+    private int ramal;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getRamal() {
+        return ramal;
+    }
+
+    public void setRamal(int ramal) {
+        this.ramal = ramal;
+    }
+    
 }
